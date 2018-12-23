@@ -631,8 +631,12 @@ MonoBehaviour:
   - {fileID: 1555851488130254, guid: 90f99869b96e2df4bae83e1f870b68ec, type: 3}
   owningCharacterMiniMapObjects:
   - {fileID: 1620662158371272, guid: f94b43a3f251a6a41849b19fe0aa4fa5, type: 3}
+  nonOwningCharacterMiniMapObjects:
+  - {fileID: 598157954716958599, guid: ce40a263e27c9034fa4ef0fc9e069eaf, type: 3}
   monsterCharacterMiniMapObjects:
   - {fileID: 1237499379163380, guid: 2d0368f81f8351144a6b29dc200981b4, type: 3}
+  npcMiniMapObjects:
+  - {fileID: 7252066599941796741, guid: 3ad746095a8b209429a1b9e27fab61aa, type: 3}
   owningCharacterUI: {fileID: 114899762762614018, guid: 8447ca51d1886764e99f26df8033c4c5,
     type: 3}
   nonOwningCharacterUI: {fileID: 114899762762614018, guid: cf8cfe06d3da49e4ab083bd040961dd5,
@@ -681,6 +685,7 @@ MonoBehaviour:
   dropDistance: 1
   conversationDistance: 3
   buildDistance: 10
+  localChatDistance: 10
   minSummonDistance: 2
   maxSummonDistance: 3
   enemySpottedNotifyDistance: 5

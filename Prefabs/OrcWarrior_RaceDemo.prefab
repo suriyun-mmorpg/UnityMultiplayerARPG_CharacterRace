@@ -1422,7 +1422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assetId: 
-  objectId: 15
+  objectId: 0
   connectId: 0
   manager: {fileID: 0}
   subscriberIds: 

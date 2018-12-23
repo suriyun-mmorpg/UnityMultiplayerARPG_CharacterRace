@@ -603,7 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assetId: 
-  objectId: 18
+  objectId: 0
   connectId: 0
   manager: {fileID: 0}
   subscriberIds: 
