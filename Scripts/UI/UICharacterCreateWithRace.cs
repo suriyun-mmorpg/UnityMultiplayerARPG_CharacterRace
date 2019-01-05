@@ -17,7 +17,7 @@ namespace MultiplayerARPG
                 if (cacheRaceToggles == null)
                 {
                     cacheRaceToggles = new Dictionary<CharacterRace, Toggle>();
-                    foreach (var raceToggle in raceToggles)
+                    foreach (CharacterRaceTogglePair raceToggle in raceToggles)
                     {
                         cacheRaceToggles[raceToggle.race] = raceToggle.toggle;
                     }
@@ -30,7 +30,7 @@ namespace MultiplayerARPG
 
         public override void Show()
         {
-            foreach (var raceToggle in CacheRaceToggles)
+            foreach (KeyValuePair<CharacterRace, Toggle> raceToggle in CacheRaceToggles)
             {
                 raceToggle.Value.onValueChanged.RemoveAllListeners();
                 raceToggle.Value.onValueChanged.AddListener((isOn) =>
