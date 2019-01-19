@@ -4,8 +4,7 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -97,12 +96,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 23e69da72a14d644eb8c0128af2ee872, type: 2}
   - {fileID: 11400000, guid: 04cf3a67b05487e4a84f0da538307cb3, type: 2}
   playerCharacterEntities:
-  - {fileID: 114691723812477900, guid: bd24e37ae385b3746a60a3fd8cc71164, type: 3}
-  - {fileID: 2039784878652316561, guid: b925e4829480a48488db00a45708a622, type: 3}
-  - {fileID: 114183134966252968, guid: d5831d1299abfb445b26a45952fb8125, type: 3}
+  - {fileID: 114016340212064688, guid: bd24e37ae385b3746a60a3fd8cc71164, type: 2}
+  - {fileID: 114026934616346548, guid: d5831d1299abfb445b26a45952fb8125, type: 2}
+  - {fileID: 114607038526802144, guid: b925e4829480a48488db00a45708a622, type: 2}
   monsterCharacterEntities:
-  - {fileID: 114107677553822186, guid: 2124e2e5e8dd2794ea8c8aff808d0096, type: 3}
-  - {fileID: 114313543944479198, guid: c26675f5ea04ade429c509dd5998a3a3, type: 3}
+  - {fileID: 114313543944479198, guid: c26675f5ea04ade429c509dd5998a3a3, type: 2}
+  - {fileID: 114107677553822186, guid: 2124e2e5e8dd2794ea8c8aff808d0096, type: 2}
   mapInfos:
   - {fileID: 11400000, guid: de8b0e4099f8d444692e88f92309e90d, type: 2}
   - {fileID: 11400000, guid: fbe2a93dfafee544cbeaf175d3491e33, type: 2}
