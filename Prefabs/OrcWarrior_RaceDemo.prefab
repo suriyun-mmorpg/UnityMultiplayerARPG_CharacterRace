@@ -2646,38 +2646,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviourIndex: 0
-  syncFieldNames:
-  - characterName
-  - currentFood
-  - currentHp
-  - currentMp
-  - currentStamina
-  - currentWater
-  - equipWeapons
-  - exp
-  - gold
-  - guildId
-  - id
-  - isHidding
-  - level
-  - partyId
-  - skillPoint
-  - statPoint
-  - syncTitle
-  syncListNames:
-  - attributes
-  - buffs
-  - equipItems
-  - hotkeys
-  - nonEquipItems
-  - quests
-  - skills
-  - skillUsages
-  - summons
   sendOptions: 0
   sendInterval: 0.1
   title: 
   textTitle: {fileID: 0}
+  syncTitle:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value: 
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2687,7 +2666,7 @@ MonoBehaviour:
     value: 0
   combatTextTransform: {fileID: 4739274400074772}
   race: {fileID: 11400000, guid: 73468e3da0462c84b8d3890f1b218e68, type: 2}
-  database: {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
+  database: {fileID: 0}
   ownerObjects: []
   nonOwnerObjects: []
   meleeDamageTransform: {fileID: 4739274400074772}
@@ -2695,13 +2674,6 @@ MonoBehaviour:
   uiElementTransform: {fileID: 4776855341053162}
   miniMapElementContainer: {fileID: 4587424033350662}
   id:
-    behaviour: {fileID: 0}
-    elementId: 0
-    sendOptions: 3
-    sendInterval: 0.1
-    forOwnerOnly: 0
-    value: 
-  characterName:
     behaviour: {fileID: 0}
     elementId: 0
     sendOptions: 3
@@ -2806,8 +2778,29 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  controllerPrefab: {fileID: 114096437919969166, guid: 147be1283e4eb834d94ad1c905a031e7,
-    type: 2}
+  umaAvatarData:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value:
+      raceIndex: 0
+      genderIndex: 0
+      colors: 
+      slots: 
+      dnas: 
+  characterTitle: Orchid
+  playerCharacters:
+  - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
+  controllerPrefab: {fileID: 0}
+  dataId:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value: 0
   statPoint:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2834,14 +2827,14 @@ MonoBehaviour:
     elementId: 0
     sendOptions: 3
     sendInterval: 0.1
-    forOwnerOnly: 1
+    forOwnerOnly: 0
     value: 0
   guildId:
     behaviour: {fileID: 0}
     elementId: 0
     sendOptions: 3
     sendInterval: 0.1
-    forOwnerOnly: 1
+    forOwnerOnly: 0
     value: 0
   hotkeys:
     behaviour: {fileID: 0}
@@ -2928,6 +2921,7 @@ MonoBehaviour:
     defaultModel: {fileID: 0}
     transform: {fileID: 4653603705249950}
   animatorType: 0
+  animator: {fileID: 0}
   animatorController: {fileID: 9100000, guid: 767c78a88875d8749b9859d001ddb647, type: 2}
   defaultAnimatorData:
     idleClip: {fileID: 0}
@@ -2937,6 +2931,7 @@ MonoBehaviour:
     hurtClip: {fileID: 0}
     deadClip: {fileID: 0}
     actionClip: {fileID: 0}
+  legacyAnimation: {fileID: 0}
   legacyAnimationData:
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
@@ -2981,9 +2976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviourIndex: 0
-  syncFieldNames: []
-  syncListNames: []
-  sendOptions: 0
+  sendOptions: 2
   sendInterval: 0.1
   syncingTransform: {fileID: 0}
   ownerClientCanSendTransform: 1
@@ -2993,9 +2986,9 @@ MonoBehaviour:
   syncPositionX: 0
   syncPositionY: 0
   syncPositionZ: 0
-  syncRotationX: 0
+  syncRotationX: 1
   syncRotationY: 0
-  syncRotationZ: 0
+  syncRotationZ: 1
 --- !u!114 &114756567249403426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3008,8 +3001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   behaviourIndex: 0
-  syncFieldNames: []
-  syncListNames: []
   sendOptions: 0
   sendInterval: 0.1
   range: 80
