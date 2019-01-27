@@ -50,10 +50,12 @@ namespace MultiplayerARPG
         private void OnRaceToggleUpdate(CharacterRace race, bool isOn)
         {
             if (isOn)
+            {
                 selectedRaces.Add(race);
+                LoadCharacters();
+            }
             else
                 selectedRaces.Remove(race);
-            LoadCharacters();
         }
     }
 }
