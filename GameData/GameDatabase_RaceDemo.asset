@@ -91,7 +91,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fe3307ecb7dbe3142a73616746b84e59, type: 2}
   playerCharacters:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
-  - {fileID: 11400000, guid: f1d7aab07a0102442a9a230cf5706f32, type: 2}
   monsterCharacters:
   - {fileID: 11400000, guid: 23e69da72a14d644eb8c0128af2ee872, type: 2}
   - {fileID: 11400000, guid: 04cf3a67b05487e4a84f0da538307cb3, type: 2}
