@@ -2921,7 +2921,7 @@ MonoBehaviour:
     defaultModel: {fileID: 0}
     transform: {fileID: 4653603705249950}
   animatorType: 0
-  animator: {fileID: 0}
+  animator: {fileID: 95656639932681360}
   animatorController: {fileID: 9100000, guid: 767c78a88875d8749b9859d001ddb647, type: 2}
   defaultAnimatorData:
     idleClip: {fileID: 0}
