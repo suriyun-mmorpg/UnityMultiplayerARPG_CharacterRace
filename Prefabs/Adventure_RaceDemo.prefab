@@ -3223,7 +3223,7 @@ MonoBehaviour:
     defaultModel: {fileID: 1442090587856542}
     transform: {fileID: 4240694416600172}
   animatorType: 0
-  animator: {fileID: 0}
+  animator: {fileID: 95222642458346626}
   animatorController: {fileID: 9100000, guid: 767c78a88875d8749b9859d001ddb647, type: 2}
   defaultAnimatorData:
     idleClip: {fileID: 0}
@@ -3233,6 +3233,7 @@ MonoBehaviour:
     hurtClip: {fileID: 0}
     deadClip: {fileID: 0}
     actionClip: {fileID: 7400000, guid: c5e70869262598d49809c2cf63f2f3c3, type: 2}
+  legacyAnimation: {fileID: 0}
   legacyAnimationData:
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
