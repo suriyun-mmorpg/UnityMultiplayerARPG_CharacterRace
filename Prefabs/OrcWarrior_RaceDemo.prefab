@@ -2930,7 +2930,7 @@ MonoBehaviour:
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
     deadClip: {fileID: 0}
-    actionClip: {fileID: 0}
+    actionClip: {fileID: 7400000, guid: c5e70869262598d49809c2cf63f2f3c3, type: 2}
   legacyAnimation: {fileID: 0}
   legacyAnimationData:
     idleClip: {fileID: 0}
