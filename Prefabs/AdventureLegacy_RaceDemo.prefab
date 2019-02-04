@@ -2824,6 +2824,8 @@ MonoBehaviour:
   sendInterval: 0.1
   title: 
   textTitle: {fileID: 0}
+  ownerObjects: []
+  nonOwnerObjects: []
   syncTitle:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2841,12 +2843,12 @@ MonoBehaviour:
   combatTextTransform: {fileID: 4422137392155320}
   race: {fileID: 11400000, guid: d6fb3a74cf2c2b1419f712a741bae138, type: 2}
   database: {fileID: 0}
-  ownerObjects: []
-  nonOwnerObjects: []
+  uiElementTransform: {fileID: 0}
+  miniMapElementContainer: {fileID: 0}
   meleeDamageTransform: {fileID: 4422137392155320}
   missileDamageTransform: {fileID: 4422137392155320}
-  uiElementTransform: {fileID: 4623782107219784}
-  miniMapElementContainer: {fileID: 4154990105196352}
+  characterUITransform: {fileID: 4623782107219784}
+  miniMapUITransform: {fileID: 4154990105196352}
   id:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2952,18 +2954,6 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  umaAvatarData:
-    behaviour: {fileID: 0}
-    elementId: 0
-    sendOptions: 3
-    sendInterval: 0.1
-    forOwnerOnly: 0
-    value:
-      raceIndex: 0
-      genderIndex: 0
-      colors: 
-      slots: 
-      dnas: 
   characterTitle: Mark
   playerCharacters:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
@@ -3018,11 +3008,23 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
+  umaAvatarData:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value:
+      raceIndex: 0
+      genderIndex: 0
+      colors: 
+      slots: 
+      dnas: 
   stoppingDistance: 0.1
   groundingDistance: 0.1
   jumpHeight: 2
   gravityRate: 1
-  angularSpeed: 800
+  backwardMoveSpeedRate: 0.75
   movementSecure: 0
   writeAddonLog: 0
 --- !u!114 &114067787847440550
@@ -3111,6 +3113,13 @@ MonoBehaviour:
   defaultAnimatorData:
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3120,6 +3129,17 @@ MonoBehaviour:
   legacyAnimationData:
     idleClip: {fileID: 7400000, guid: b1db41be7e55c9d41ac99b65bb0bdbed, type: 3}
     moveClip: {fileID: 7400000, guid: 0aa5232279c2e984c86b92ee54c446f4, type: 3}
+    moveBackwardClip: {fileID: 7400000, guid: 0aa5232279c2e984c86b92ee54c446f4, type: 3}
+    moveLeftClip: {fileID: 7400000, guid: e9fe768cd09b93e478d10716bcd96345, type: 3}
+    moveRightClip: {fileID: 7400000, guid: a3e6fec86c114164b8ec495e5bd3733f, type: 3}
+    moveForwardLeftClip: {fileID: 7400000, guid: e9fe768cd09b93e478d10716bcd96345,
+      type: 3}
+    moveForwardRightClip: {fileID: 7400000, guid: a3e6fec86c114164b8ec495e5bd3733f,
+      type: 3}
+    moveBackwardLeftClip: {fileID: 7400000, guid: e9fe768cd09b93e478d10716bcd96345,
+      type: 3}
+    moveBackwardRightClip: {fileID: 7400000, guid: a3e6fec86c114164b8ec495e5bd3733f,
+      type: 3}
     jumpClip: {fileID: 7400000, guid: 2a8dd8058e9589f4798d560e50626b4b, type: 3}
     fallClip: {fileID: 7400000, guid: b1db41be7e55c9d41ac99b65bb0bdbed, type: 3}
     hurtClip: {fileID: 7400000, guid: 59288fa816d02ca46a5c4f59e57c78b2, type: 3}
@@ -3155,6 +3175,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: d433f880a1c9d6149bcbf3b5676ea6a0, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3173,6 +3200,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: a33855f9c9112894fbf4fb803ab001da, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3200,6 +3234,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: 68fba38efbfdced49a5d1e2ae95c0026, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3229,6 +3270,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: f8c1eae7f66f9bb46a41403e61cd87cb, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3256,6 +3304,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: e1f9f1925e8c9b14aa98b51238e5a26e, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3378,7 +3433,6 @@ MonoBehaviour:
   randomVolumeMax: 0.3
   randomPitchMin: 0.75
   randomPitchMax: 1
-  verticalThresholdToDontPlaySound: 0.1
 --- !u!114 &114428446442733388
 MonoBehaviour:
   m_ObjectHideFlags: 1

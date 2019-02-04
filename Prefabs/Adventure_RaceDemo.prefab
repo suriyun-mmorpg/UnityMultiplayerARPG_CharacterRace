@@ -2802,7 +2802,7 @@ Animator:
   m_GameObject: {fileID: 1553077973440118}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: cd58eced228a0df44ae3596b8fe2f44d, type: 3}
-  m_Controller: {fileID: 9100000, guid: 767c78a88875d8749b9859d001ddb647, type: 2}
+  m_Controller: {fileID: 9100000, guid: aca92839e11ce3f4c8503f232221dc80, type: 2}
   m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2827,6 +2827,8 @@ MonoBehaviour:
   sendInterval: 0.01
   title: 
   textTitle: {fileID: 0}
+  ownerObjects: []
+  nonOwnerObjects: []
   syncTitle:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2844,12 +2846,12 @@ MonoBehaviour:
   combatTextTransform: {fileID: 4240157609894612}
   race: {fileID: 11400000, guid: d6fb3a74cf2c2b1419f712a741bae138, type: 2}
   database: {fileID: 0}
-  ownerObjects: []
-  nonOwnerObjects: []
+  uiElementTransform: {fileID: 0}
+  miniMapElementContainer: {fileID: 0}
   meleeDamageTransform: {fileID: 4240157609894612}
   missileDamageTransform: {fileID: 4240157609894612}
-  uiElementTransform: {fileID: 4907111934565064}
-  miniMapElementContainer: {fileID: 4406426493824112}
+  characterUITransform: {fileID: 4907111934565064}
+  miniMapUITransform: {fileID: 4406426493824112}
   id:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2955,18 +2957,6 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  umaAvatarData:
-    behaviour: {fileID: 0}
-    elementId: 0
-    sendOptions: 3
-    sendInterval: 0.1
-    forOwnerOnly: 0
-    value:
-      raceIndex: 0
-      genderIndex: 0
-      colors: 
-      slots: 
-      dnas: 
   characterTitle: Mike
   playerCharacters:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
@@ -3021,11 +3011,23 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
+  umaAvatarData:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value:
+      raceIndex: 0
+      genderIndex: 0
+      colors: 
+      slots: 
+      dnas: 
   stoppingDistance: 0.1
   groundingDistance: 0.1
   jumpHeight: 2
   gravityRate: 1
-  angularSpeed: 800
+  backwardMoveSpeedRate: 0.75
   movementSecure: 0
   writeAddonLog: 0
 --- !u!114 &114017641040235930
@@ -3105,7 +3107,6 @@ MonoBehaviour:
   randomVolumeMax: 0.3
   randomPitchMin: 0.75
   randomPitchMax: 1
-  verticalThresholdToDontPlaySound: 0.1
 --- !u!114 &114611346255219240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3224,10 +3225,17 @@ MonoBehaviour:
     transform: {fileID: 4240694416600172}
   animatorType: 0
   animator: {fileID: 95222642458346626}
-  animatorController: {fileID: 9100000, guid: 767c78a88875d8749b9859d001ddb647, type: 2}
+  animatorController: {fileID: 9100000, guid: aca92839e11ce3f4c8503f232221dc80, type: 2}
   defaultAnimatorData:
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3237,6 +3245,13 @@ MonoBehaviour:
   legacyAnimationData:
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3272,6 +3287,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: d433f880a1c9d6149bcbf3b5676ea6a0, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3290,6 +3312,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: a33855f9c9112894fbf4fb803ab001da, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3317,6 +3346,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: 68fba38efbfdced49a5d1e2ae95c0026, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3346,6 +3382,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: f8c1eae7f66f9bb46a41403e61cd87cb, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3373,6 +3416,13 @@ MonoBehaviour:
   - weaponType: {fileID: 11400000, guid: e1f9f1925e8c9b14aa98b51238e5a26e, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
