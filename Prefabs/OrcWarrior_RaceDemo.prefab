@@ -2629,11 +2629,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1381541605900346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7618f49529f4de146a9eacd23be176f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectGroundedSpeed: 0.1
 --- !u!114 &114607038526802144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2649,8 +2650,19 @@ MonoBehaviour:
   sendOptions: 0
   sendInterval: 0.1
   title: 
+  title2: 
   textTitle: {fileID: 0}
+  textTitle2: {fileID: 0}
+  ownerObjects: []
+  nonOwnerObjects: []
   syncTitle:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value: 
+  syncTitle2:
     behaviour: {fileID: 0}
     elementId: 0
     sendOptions: 3
@@ -2667,12 +2679,13 @@ MonoBehaviour:
   combatTextTransform: {fileID: 4739274400074772}
   race: {fileID: 11400000, guid: 73468e3da0462c84b8d3890f1b218e68, type: 2}
   database: {fileID: 0}
-  ownerObjects: []
-  nonOwnerObjects: []
+  uiElementTransform: {fileID: 0}
+  miniMapElementContainer: {fileID: 0}
   meleeDamageTransform: {fileID: 4739274400074772}
   missileDamageTransform: {fileID: 4739274400074772}
-  uiElementTransform: {fileID: 4776855341053162}
-  miniMapElementContainer: {fileID: 4587424033350662}
+  characterUITransform: {fileID: 4776855341053162}
+  miniMapUITransform: {fileID: 4587424033350662}
+  debugFovColor: {r: 0, g: 1, b: 0, a: 0.04}
   id:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2736,6 +2749,7 @@ MonoBehaviour:
         durability: 0
         exp: 0
         lockRemainsDuration: 0
+        ammo: 0
       leftHand:
         dataId: 0
         level: 0
@@ -2743,10 +2757,18 @@ MonoBehaviour:
         durability: 0
         exp: 0
         lockRemainsDuration: 0
+        ammo: 0
   isHidding:
     behaviour: {fileID: 0}
     elementId: 0
     sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value: 0
+  movementState:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 2
     sendInterval: 0.1
     forOwnerOnly: 0
     value: 0
@@ -2778,18 +2800,6 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  umaAvatarData:
-    behaviour: {fileID: 0}
-    elementId: 0
-    sendOptions: 3
-    sendInterval: 0.1
-    forOwnerOnly: 0
-    value:
-      raceIndex: 0
-      genderIndex: 0
-      colors: 
-      slots: 
-      dnas: 
   characterTitle: Orchid
   playerCharacters:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
@@ -2822,6 +2832,20 @@ MonoBehaviour:
     sendInterval: 0.1
     forOwnerOnly: 1
     value: 0
+  userGold:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 1
+    value: 0
+  userCash:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 1
+    value: 0
   partyId:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2836,6 +2860,13 @@ MonoBehaviour:
     sendInterval: 0.1
     forOwnerOnly: 0
     value: 0
+  isWarping:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 1
+    value: 0
   hotkeys:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2848,7 +2879,7 @@ MonoBehaviour:
   groundingDistance: 0.1
   jumpHeight: 2
   gravityRate: 1
-  angularSpeed: 800
+  backwardMoveSpeedRate: 0.75
   movementSecure: 0
   writeAddonLog: 0
 --- !u!114 &114668736016833334
@@ -2926,6 +2957,13 @@ MonoBehaviour:
   defaultAnimatorData:
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -2935,6 +2973,13 @@ MonoBehaviour:
   legacyAnimationData:
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
+    moveBackwardClip: {fileID: 0}
+    moveLeftClip: {fileID: 0}
+    moveRightClip: {fileID: 0}
+    moveForwardLeftClip: {fileID: 0}
+    moveForwardRightClip: {fileID: 0}
+    moveBackwardLeftClip: {fileID: 0}
+    moveBackwardRightClip: {fileID: 0}
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -2946,21 +2991,18 @@ MonoBehaviour:
     fallClipFadeLength: 0.1
     hurtClipFadeLength: 0.1
     deadClipFadeLength: 0.1
-    magnitudeToPlayMoveClip: 0.1
-    ySpeedToPlayJumpClip: 0.25
-    ySpeedToPlayFallClip: -0.25
   skinnedMeshRenderer: {fileID: 0}
   defaultAttackAnimations:
   - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
     triggerDurationRate: 0.5
     extraDuration: 0.5
     audioClips:
-    - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+    - {fileID: 0}
   - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
     triggerDurationRate: 0.5
     extraDuration: 0.5
     audioClips:
-    - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+    - {fileID: 0}
   defaultSkillCastAnimations: []
   weaponAnimations: []
   skillCastAnimations: []

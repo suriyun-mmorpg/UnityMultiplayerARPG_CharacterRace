@@ -2826,10 +2826,19 @@ MonoBehaviour:
   sendOptions: 0
   sendInterval: 0.01
   title: 
+  title2: 
   textTitle: {fileID: 0}
+  textTitle2: {fileID: 0}
   ownerObjects: []
   nonOwnerObjects: []
   syncTitle:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value: 
+  syncTitle2:
     behaviour: {fileID: 0}
     elementId: 0
     sendOptions: 3
@@ -2852,6 +2861,7 @@ MonoBehaviour:
   missileDamageTransform: {fileID: 4240157609894612}
   characterUITransform: {fileID: 4907111934565064}
   miniMapUITransform: {fileID: 4406426493824112}
+  debugFovColor: {r: 0, g: 1, b: 0, a: 0.04}
   id:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2915,6 +2925,7 @@ MonoBehaviour:
         durability: 0
         exp: 0
         lockRemainsDuration: 0
+        ammo: 0
       leftHand:
         dataId: 0
         level: 0
@@ -2922,10 +2933,18 @@ MonoBehaviour:
         durability: 0
         exp: 0
         lockRemainsDuration: 0
+        ammo: 0
   isHidding:
     behaviour: {fileID: 0}
     elementId: 0
     sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 0
+    value: 0
+  movementState:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 2
     sendInterval: 0.1
     forOwnerOnly: 0
     value: 0
@@ -2989,6 +3008,20 @@ MonoBehaviour:
     sendInterval: 0.1
     forOwnerOnly: 1
     value: 0
+  userGold:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 1
+    value: 0
+  userCash:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 1
+    value: 0
   partyId:
     behaviour: {fileID: 0}
     elementId: 0
@@ -3003,6 +3036,13 @@ MonoBehaviour:
     sendInterval: 0.1
     forOwnerOnly: 0
     value: 0
+  isWarping:
+    behaviour: {fileID: 0}
+    elementId: 0
+    sendOptions: 3
+    sendInterval: 0.1
+    forOwnerOnly: 1
+    value: 0
   hotkeys:
     behaviour: {fileID: 0}
     elementId: 0
@@ -3011,18 +3051,6 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  umaAvatarData:
-    behaviour: {fileID: 0}
-    elementId: 0
-    sendOptions: 3
-    sendInterval: 0.1
-    forOwnerOnly: 0
-    value:
-      raceIndex: 0
-      genderIndex: 0
-      colors: 
-      slots: 
-      dnas: 
   stoppingDistance: 0.1
   groundingDistance: 0.1
   jumpHeight: 2
@@ -3091,16 +3119,16 @@ MonoBehaviour:
   audioSource: {fileID: 82448056664777988}
   soundData:
     randomAudioClips:
-    - {fileID: 8300000, guid: 8106d908988426f4dab15ed2538f183a, type: 3}
-    - {fileID: 8300000, guid: d140acd79d55497428cf8abbfcacdbad, type: 3}
-    - {fileID: 8300000, guid: 497a2d8357447344d8b419cbf80b24e7, type: 3}
-    - {fileID: 8300000, guid: 22963c914adbdbd4f8de25eeb0ff63ad, type: 3}
-    - {fileID: 8300000, guid: d080869c7cb457e4d8d7ff115bb84792, type: 3}
-    - {fileID: 8300000, guid: 81d5a9fe671f7a84694d09a078a1aa56, type: 3}
-    - {fileID: 8300000, guid: 15058bfaa0cbf49438a216e90823b383, type: 3}
-    - {fileID: 8300000, guid: 8980e35fbfd6c9648a63ba79a8e78183, type: 3}
-    - {fileID: 8300000, guid: dc78aa126e3752e4c85e52850addf51c, type: 3}
-    - {fileID: 8300000, guid: 2ff7bcc1542eeab48a0f4d5d89a03c9a, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   stepDelay: 0.35
   stepThreshold: 0.1
   randomVolumeMin: 0.15
@@ -3138,11 +3166,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553077973440118}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7618f49529f4de146a9eacd23be176f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectGroundedSpeed: 0.1
 --- !u!114 &114644228651530220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3263,21 +3292,18 @@ MonoBehaviour:
     fallClipFadeLength: 0.1
     hurtClipFadeLength: 0.1
     deadClipFadeLength: 0.1
-    magnitudeToPlayMoveClip: 0.1
-    ySpeedToPlayJumpClip: 0.25
-    ySpeedToPlayFallClip: -0.25
   skinnedMeshRenderer: {fileID: 0}
   defaultAttackAnimations:
   - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
     triggerDurationRate: 0.5
     extraDuration: 0
     audioClips:
-    - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+    - {fileID: 0}
   - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
     triggerDurationRate: 0.5
     extraDuration: 0
     audioClips:
-    - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+    - {fileID: 0}
   defaultSkillCastAnimations:
   - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
     triggerDurationRate: 0.7
@@ -3303,7 +3329,7 @@ MonoBehaviour:
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 256b98dc23466734897f7fc309e161e5, type: 3}
+      - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: 6e7f96b5c5df8814b98d21a4916bb379, type: 3}
       triggerDurationRate: 0.7
@@ -3328,12 +3354,12 @@ MonoBehaviour:
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
@@ -3362,23 +3388,23 @@ MonoBehaviour:
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
   - weaponType: {fileID: 11400000, guid: f8c1eae7f66f9bb46a41403e61cd87cb, type: 2}
     idleClip: {fileID: 0}
     moveClip: {fileID: 0}
@@ -3398,12 +3424,12 @@ MonoBehaviour:
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
@@ -3432,12 +3458,12 @@ MonoBehaviour:
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
@@ -3454,7 +3480,7 @@ MonoBehaviour:
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
   - skill: {fileID: 11400000, guid: 2da121bb20bbc844bafd830dcb439578, type: 2}
     castAnimations: []
   - skill: {fileID: 11400000, guid: 62050ee15b839a04080e8d1764fc4737, type: 2}
@@ -3479,7 +3505,7 @@ MonoBehaviour:
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips:
-      - {fileID: 8300000, guid: 543fbe2f32e015749bafb0f7691eb41b, type: 3}
+      - {fileID: 0}
   - skill: {fileID: 11400000, guid: d55d8bfb45f9c574d9120b6ffcd66e3c, type: 2}
     castAnimations:
     - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
