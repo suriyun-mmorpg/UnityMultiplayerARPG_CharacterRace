@@ -2649,31 +2649,35 @@ MonoBehaviour:
   behaviourIndex: 0
   sendOptions: 0
   sendInterval: 0.1
-  title: 
-  title2: 
   textTitle: {fileID: 0}
-  textTitle2: {fileID: 0}
+  textTitleB: {fileID: 0}
   ownerObjects: []
   nonOwnerObjects: []
   syncTitle:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 
-  syncTitle2:
+  syncTitleB:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   combatTextTransform: {fileID: 4739274400074772}
@@ -2689,57 +2693,73 @@ MonoBehaviour:
   id:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 
   level:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   exp:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   currentMp:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   currentStamina:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 0
+    deliveryMethod: 0
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   currentFood:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   currentWater:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   equipWeapons:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value:
       rightHand:
@@ -2761,15 +2781,19 @@ MonoBehaviour:
   isHidding:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   movementState:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 2
+    deliveryMethod: 2
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   attributes:
@@ -2807,64 +2831,82 @@ MonoBehaviour:
   dataId:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   statPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 1
     value: 0
   skillPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 1
     value: 0
   gold:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 1
     value: 0
   userGold:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 1
     value: 0
   userCash:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 1
     value: 0
   partyId:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   guildId:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 0
     value: 0
   isWarping:
     behaviour: {fileID: 0}
     elementId: 0
-    sendOptions: 3
+    deliveryMethod: 4
     sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
     forOwnerOnly: 1
     value: 0
   hotkeys:
@@ -3064,7 +3106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assetId: b925e4829480a48488db00a45708a622
   objectId: 0
-  connectId: 0
+  connectionId: 0
   manager: {fileID: 0}
   subscriberIds: 
 --- !u!114 &114921424130647820
