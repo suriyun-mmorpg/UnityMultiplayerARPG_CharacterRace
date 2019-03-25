@@ -603,7 +603,6 @@ GameObject:
   - component: {fileID: 54993996439226400}
   - component: {fileID: 114193103627699786}
   - component: {fileID: 114611346255219240}
-  - component: {fileID: 114612704847772350}
   - component: {fileID: 114644228651530220}
   - component: {fileID: 114017641040235930}
   - component: {fileID: 136868398192971542}
@@ -3202,18 +3201,6 @@ MonoBehaviour:
   syncRotationX: 1
   syncRotationY: 0
   syncRotationZ: 1
---- !u!114 &114612704847772350
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1553077973440118}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7618f49529f4de146a9eacd23be176f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectGroundedSpeed: 0.1
 --- !u!114 &114644228651530220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3312,6 +3299,7 @@ MonoBehaviour:
     hurtClip: {fileID: 0}
     deadClip: {fileID: 0}
     actionClip: {fileID: 7400000, guid: c5e70869262598d49809c2cf63f2f3c3, type: 2}
+    castSkillClip: {fileID: 7400000, guid: 92c60ef1f074c1d4ba3a11ad510881ba, type: 2}
   legacyAnimation: {fileID: 0}
   legacyAnimationData:
     idleClip: {fileID: 0}
@@ -3346,8 +3334,10 @@ MonoBehaviour:
     extraDuration: 0
     audioClips:
     - {fileID: 0}
-  defaultSkillCastAnimations:
-  - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+  defaultSkillCastClip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e,
+    type: 3}
+  defaultSkillActivateAnimation:
+    clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
     triggerDurationRate: 0.7
     extraDuration: 0
     audioClips: []
@@ -3515,63 +3505,102 @@ MonoBehaviour:
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips: []
-  skillCastAnimations:
+  skillAnimations:
   - skill: {fileID: 11400000, guid: e51e32bb6c31b564a9e211e7b65c82ec, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips:
       - {fileID: 0}
   - skill: {fileID: 11400000, guid: 2da121bb20bbc844bafd830dcb439578, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: 62050ee15b839a04080e8d1764fc4737, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: b9f63b3b2f7be634e9493c7acfb8ef54, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: 417c6b4c5515bd84a9bee4c80ea404fa, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: 342c2acc88ca3f34ab00cf7f43775edf, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: aa4fffff388c1634397b4bdcdb18a4fa, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips:
       - {fileID: 0}
   - skill: {fileID: 11400000, guid: d55d8bfb45f9c574d9120b6ffcd66e3c, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: c0bba1d7b0967e3428404a9fc3211a7b, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: 25f18d3131d816146b890611d9123df4, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: c036ac5144bfb36428bd9b2fa2a5ce2c, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: 00144a2dd7250bb4ab60d49c66cc48f0, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: 558b16358ddfa6346b5e5e6211155da6, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
+  defaultSkillCastAnimations: []
+  skillCastAnimations: []
 --- !u!136 &136868398192971542
 CapsuleCollider:
   m_ObjectHideFlags: 1

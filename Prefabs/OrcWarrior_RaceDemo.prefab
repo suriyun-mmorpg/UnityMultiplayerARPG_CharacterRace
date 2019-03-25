@@ -348,7 +348,6 @@ GameObject:
   - component: {fileID: 114668736016833334}
   - component: {fileID: 114812936644639796}
   - component: {fileID: 114706046604278806}
-  - component: {fileID: 114389651407712858}
   - component: {fileID: 114921424130647820}
   - component: {fileID: 114151901321449002}
   - component: {fileID: 136243329345557636}
@@ -2623,18 +2622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f29b9cf2a5bb44c93ee7645834d9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114389651407712858
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1381541605900346}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7618f49529f4de146a9eacd23be176f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectGroundedSpeed: 0.1
 --- !u!114 &114607038526802144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3011,6 +2998,7 @@ MonoBehaviour:
     hurtClip: {fileID: 0}
     deadClip: {fileID: 0}
     actionClip: {fileID: 7400000, guid: c5e70869262598d49809c2cf63f2f3c3, type: 2}
+    castSkillClip: {fileID: 0}
   legacyAnimation: {fileID: 0}
   legacyAnimationData:
     idleClip: {fileID: 0}
@@ -3045,8 +3033,15 @@ MonoBehaviour:
     extraDuration: 0.5
     audioClips:
     - {fileID: 0}
-  defaultSkillCastAnimations: []
+  defaultSkillCastClip: {fileID: 0}
+  defaultSkillActivateAnimation:
+    clip: {fileID: 0}
+    triggerDurationRate: 0
+    extraDuration: 0
+    audioClips: []
   weaponAnimations: []
+  skillAnimations: []
+  defaultSkillCastAnimations: []
   skillCastAnimations: []
 --- !u!114 &114706046604278806
 MonoBehaviour:

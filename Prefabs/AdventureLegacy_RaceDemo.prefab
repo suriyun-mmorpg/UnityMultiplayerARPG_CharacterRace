@@ -765,7 +765,6 @@ GameObject:
   - component: {fileID: 54994754746221940}
   - component: {fileID: 114428446442733388}
   - component: {fileID: 114558051643793298}
-  - component: {fileID: 114438592702142200}
   - component: {fileID: 114067787847440550}
   - component: {fileID: 114150459030292140}
   - component: {fileID: 136187122685537058}
@@ -3195,6 +3194,7 @@ MonoBehaviour:
     hurtClip: {fileID: 0}
     deadClip: {fileID: 0}
     actionClip: {fileID: 0}
+    castSkillClip: {fileID: 0}
   legacyAnimation: {fileID: 0}
   legacyAnimationData:
     idleClip: {fileID: 7400000, guid: b1db41be7e55c9d41ac99b65bb0bdbed, type: 3}
@@ -3233,8 +3233,10 @@ MonoBehaviour:
     extraDuration: 0
     audioClips:
     - {fileID: 0}
-  defaultSkillCastAnimations:
-  - clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
+  defaultSkillCastClip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240,
+    type: 3}
+  defaultSkillActivateAnimation:
+    clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
     triggerDurationRate: 0.7
     extraDuration: 0
     audioClips: []
@@ -3260,7 +3262,7 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     leftHandAttackAnimations:
-    - clip: {fileID: 7400000, guid: 6e7f96b5c5df8814b98d21a4916bb379, type: 3}
+    - clip: {fileID: 7400000, guid: 6c99d0db5937870468e2f6db33001642, type: 3}
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips: []
@@ -3290,11 +3292,11 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     leftHandAttackAnimations:
-    - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+    - clip: {fileID: 7400000, guid: 8991f5765b057f84c9250981497b5237, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips: []
-    - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+    - clip: {fileID: 7400000, guid: 952ab2932d5b2034ba25298c9bf9de2a, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips: []
@@ -3360,11 +3362,11 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     leftHandAttackAnimations:
-    - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+    - clip: {fileID: 7400000, guid: 8991f5765b057f84c9250981497b5237, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips: []
-    - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+    - clip: {fileID: 7400000, guid: 952ab2932d5b2034ba25298c9bf9de2a, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips: []
@@ -3394,71 +3396,110 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     leftHandAttackAnimations:
-    - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+    - clip: {fileID: 7400000, guid: 8991f5765b057f84c9250981497b5237, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips: []
-    - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+    - clip: {fileID: 7400000, guid: 952ab2932d5b2034ba25298c9bf9de2a, type: 3}
       triggerDurationRate: 0.5
       extraDuration: 0
       audioClips: []
-  skillCastAnimations:
+  skillAnimations:
   - skill: {fileID: 11400000, guid: e51e32bb6c31b564a9e211e7b65c82ec, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: fde786616122c6a4395c8226d5dc1669, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: fde786616122c6a4395c8226d5dc1669, type: 3}
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips:
       - {fileID: 0}
   - skill: {fileID: 11400000, guid: 2da121bb20bbc844bafd830dcb439578, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: 62050ee15b839a04080e8d1764fc4737, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: b9f63b3b2f7be634e9493c7acfb8ef54, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: 417c6b4c5515bd84a9bee4c80ea404fa, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: 342c2acc88ca3f34ab00cf7f43775edf, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: aa4fffff388c1634397b4bdcdb18a4fa, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: fde786616122c6a4395c8226d5dc1669, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: fde786616122c6a4395c8226d5dc1669, type: 3}
       triggerDurationRate: 0.7
       extraDuration: 0
       audioClips:
       - {fileID: 0}
   - skill: {fileID: 11400000, guid: d55d8bfb45f9c574d9120b6ffcd66e3c, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: c0bba1d7b0967e3428404a9fc3211a7b, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: 25f18d3131d816146b890611d9123df4, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: c036ac5144bfb36428bd9b2fa2a5ce2c, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
   - skill: {fileID: 11400000, guid: 00144a2dd7250bb4ab60d49c66cc48f0, type: 2}
-    castAnimations: []
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 0}
+      triggerDurationRate: 0
+      extraDuration: 0
+      audioClips: []
   - skill: {fileID: 11400000, guid: 558b16358ddfa6346b5e5e6211155da6, type: 2}
-    castAnimations:
-    - clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
+    castClip: {fileID: 0}
+    activateAnimation:
+      clip: {fileID: 7400000, guid: 3aebd10713b751b42b9a858a53b24240, type: 3}
       triggerDurationRate: 0.75
       extraDuration: 0
       audioClips: []
+  defaultSkillCastAnimations: []
+  skillCastAnimations: []
 --- !u!114 &114150459030292140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3516,18 +3557,6 @@ MonoBehaviour:
   connectionId: 0
   manager: {fileID: 0}
   subscriberIds: 
---- !u!114 &114438592702142200
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1698122566515298}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7618f49529f4de146a9eacd23be176f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectGroundedSpeed: 0.1
 --- !u!114 &114558051643793298
 MonoBehaviour:
   m_ObjectHideFlags: 1
