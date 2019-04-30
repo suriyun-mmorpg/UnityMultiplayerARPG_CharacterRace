@@ -2668,6 +2668,7 @@ MonoBehaviour:
     forOwnerOnly: 0
     value: 0
   combatTextTransform: {fileID: 4739274400074772}
+  opponentAimTransform: {fileID: 0}
   race: {fileID: 11400000, guid: 73468e3da0462c84b8d3890f1b218e68, type: 2}
   database: {fileID: 0}
   uiElementTransform: {fileID: 0}
@@ -2757,6 +2758,7 @@ MonoBehaviour:
         exp: 0
         lockRemainsDuration: 0
         ammo: 0
+        sockets: 
       leftHand:
         dataId: 0
         level: 0
@@ -2765,6 +2767,7 @@ MonoBehaviour:
         exp: 0
         lockRemainsDuration: 0
         ammo: 0
+        sockets: 
   isHidding:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2811,6 +2814,20 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
+  umaAvatarData:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 0
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    forOwnerOnly: 0
+    value:
+      raceIndex: 0
+      genderIndex: 0
+      colors: 
+      slots: 
+      dnas: 
   characterTitle: Orchid
   playerCharacters:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
@@ -2905,10 +2922,14 @@ MonoBehaviour:
     elementId: 0
     forOwnerOnly: 1
   stoppingDistance: 0.1
-  groundingDistance: 0.1
   jumpHeight: 2
   gravityRate: 1
   backwardMoveSpeedRate: 0.75
+  groundCheckDistance: 0.1
+  groundCheckDistanceWhileJump: 0.01
+  stickToGroundHelperDistance: 0.5
+  shellOffset: 0
+  useNavMeshForKeyMovement: 0
   movementSecure: 0
   writeAddonLog: 0
 --- !u!114 &114668736016833334
@@ -2923,6 +2944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataId: 40419193
+  hiddingObjects:
+  - {fileID: 1588982617830124}
   effectContainers:
   - effectSocket: Floor
     transform: {fileID: 4322877261319546}
@@ -2999,6 +3022,8 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     actionClip: {fileID: 7400000, guid: c5e70869262598d49809c2cf63f2f3c3, type: 2}
     castSkillClip: {fileID: 0}
+  actionStateLayer: 0
+  castSkillStateLayer: 0
   legacyAnimation: {fileID: 0}
   legacyAnimationData:
     idleClip: {fileID: 0}
@@ -3025,11 +3050,15 @@ MonoBehaviour:
   defaultAttackAnimations:
   - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
     triggerDurationRate: 0.5
+    durationType: 0
+    fixDurationValue: 0
     extraDuration: 0.5
     audioClips:
     - {fileID: 0}
   - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
     triggerDurationRate: 0.5
+    durationType: 0
+    fixDurationValue: 0
     extraDuration: 0.5
     audioClips:
     - {fileID: 0}
@@ -3037,6 +3066,15 @@ MonoBehaviour:
   defaultSkillActivateAnimation:
     clip: {fileID: 0}
     triggerDurationRate: 0
+    durationType: 0
+    fixDurationValue: 0
+    extraDuration: 0
+    audioClips: []
+  defaultReloadAnimation:
+    clip: {fileID: 0}
+    triggerDurationRate: 0
+    durationType: 0
+    fixDurationValue: 0
     extraDuration: 0
     audioClips: []
   weaponAnimations: []
