@@ -2801,7 +2801,7 @@ Animator:
   m_GameObject: {fileID: 1553077973440118}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: cd58eced228a0df44ae3596b8fe2f44d, type: 3}
-  m_Controller: {fileID: 9100000, guid: aca92839e11ce3f4c8503f232221dc80, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2835,7 +2835,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 
   syncTitleB:
     behaviour: {fileID: 0}
@@ -2844,7 +2844,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 
   currentHp:
     behaviour: {fileID: 0}
@@ -2853,7 +2853,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   combatTextTransform: {fileID: 4240157609894612}
   opponentAimTransform: {fileID: 0}
@@ -2873,7 +2873,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 
   level:
     behaviour: {fileID: 0}
@@ -2882,7 +2882,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   exp:
     behaviour: {fileID: 0}
@@ -2891,7 +2891,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   currentMp:
     behaviour: {fileID: 0}
@@ -2900,7 +2900,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   currentStamina:
     behaviour: {fileID: 0}
@@ -2909,7 +2909,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   currentFood:
     behaviour: {fileID: 0}
@@ -2918,7 +2918,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   currentWater:
     behaviour: {fileID: 0}
@@ -2927,7 +2927,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   equipWeapons:
     behaviour: {fileID: 0}
@@ -2936,7 +2936,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value:
       rightHand:
         dataId: 0
@@ -2963,7 +2963,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   movementState:
     behaviour: {fileID: 0}
@@ -2972,7 +2972,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   attributes:
     behaviour: {fileID: 0}
@@ -3009,14 +3009,14 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value:
       raceIndex: 0
       genderIndex: 0
       colors: 
       slots: 
       dnas: 
-  characterTitle: Mike
+  characterTitle: Character Model (Animator)
   playerCharacters:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
   controllerPrefab: {fileID: 0}
@@ -3027,7 +3027,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   statPoint:
     behaviour: {fileID: 0}
@@ -3036,7 +3036,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 1
+    syncMode: 1
     value: 0
   skillPoint:
     behaviour: {fileID: 0}
@@ -3045,7 +3045,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 1
+    syncMode: 1
     value: 0
   gold:
     behaviour: {fileID: 0}
@@ -3054,7 +3054,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 1
+    syncMode: 1
     value: 0
   userGold:
     behaviour: {fileID: 0}
@@ -3063,7 +3063,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 1
+    syncMode: 1
     value: 0
   userCash:
     behaviour: {fileID: 0}
@@ -3072,7 +3072,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 1
+    syncMode: 1
     value: 0
   partyId:
     behaviour: {fileID: 0}
@@ -3081,7 +3081,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   guildId:
     behaviour: {fileID: 0}
@@ -3090,7 +3090,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 0
+    syncMode: 0
     value: 0
   isWarping:
     behaviour: {fileID: 0}
@@ -3099,7 +3099,7 @@ MonoBehaviour:
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
-    forOwnerOnly: 1
+    syncMode: 1
     value: 0
   hotkeys:
     behaviour: {fileID: 0}
@@ -3252,6 +3252,7 @@ MonoBehaviour:
     transform: {fileID: 4811971151299258}
   - effectSocket: Body
     transform: {fileID: 4760069606981682}
+  setEffectContainersBySetters: 0
   equipmentContainers:
   - equipSocket: Head
     defaultModel: {fileID: 1739725499833660}
@@ -3304,6 +3305,7 @@ MonoBehaviour:
   - equipSocket: KneeL
     defaultModel: {fileID: 1442090587856542}
     transform: {fileID: 4240694416600172}
+  setEquipmentContainersBySetters: 0
   animatorType: 0
   animator: {fileID: 95222642458346626}
   animatorController: {fileID: 9100000, guid: aca92839e11ce3f4c8503f232221dc80, type: 2}
