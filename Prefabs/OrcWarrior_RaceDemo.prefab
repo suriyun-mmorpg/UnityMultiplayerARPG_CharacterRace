@@ -2643,7 +2643,7 @@ MonoBehaviour:
   syncTitle:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2652,7 +2652,7 @@ MonoBehaviour:
   syncTitleB:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2661,7 +2661,7 @@ MonoBehaviour:
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2681,7 +2681,7 @@ MonoBehaviour:
   id:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2690,7 +2690,7 @@ MonoBehaviour:
   level:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2699,7 +2699,7 @@ MonoBehaviour:
   exp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2708,7 +2708,7 @@ MonoBehaviour:
   currentMp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2726,7 +2726,7 @@ MonoBehaviour:
   currentFood:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2735,7 +2735,7 @@ MonoBehaviour:
   currentWater:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2744,7 +2744,7 @@ MonoBehaviour:
   equipWeapons:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2771,7 +2771,7 @@ MonoBehaviour:
   isHidding:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2835,7 +2835,7 @@ MonoBehaviour:
   dataId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2844,7 +2844,7 @@ MonoBehaviour:
   statPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2853,7 +2853,7 @@ MonoBehaviour:
   skillPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2862,7 +2862,7 @@ MonoBehaviour:
   gold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2871,7 +2871,7 @@ MonoBehaviour:
   userGold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2880,7 +2880,7 @@ MonoBehaviour:
   userCash:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2889,7 +2889,7 @@ MonoBehaviour:
   partyId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2898,7 +2898,7 @@ MonoBehaviour:
   guildId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2907,7 +2907,7 @@ MonoBehaviour:
   isWarping:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3100,6 +3100,7 @@ MonoBehaviour:
   syncingTransform: {fileID: 0}
   ownerClientCanSendTransform: 1
   ownerClientNotInterpolate: 1
+  ownerClientSendInterval: 0.01
   snapThreshold: 5
   movementTheshold: 0.075
   syncPositionX: 0
