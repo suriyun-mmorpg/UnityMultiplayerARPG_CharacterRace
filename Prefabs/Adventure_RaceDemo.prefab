@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 114016340212064688}
   - component: {fileID: 114075492931202532}
   - component: {fileID: 114593293997285244}
+  - component: {fileID: 114051749282755274}
   m_Layer: 8
   m_Name: Adventure_RaceDemo
   m_TagString: Untagged
@@ -2831,7 +2832,7 @@ MonoBehaviour:
   syncTitle:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2840,16 +2841,47 @@ MonoBehaviour:
   syncTitleB:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 
+  movementState:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 2
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 1
+    syncMode: 0
+    value: 0
+  currentDirection:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 2
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 1
+    syncMode: 0
+    value: {x: 0, y: 0}
+  passengingVehicle:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 3
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 1
+    syncMode: 0
+    value:
+      objectId: 0
+      seatIndex: 0
+  cameraTargetTransform: {fileID: 0}
+  model: {fileID: 114661233482712940}
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2869,7 +2901,7 @@ MonoBehaviour:
   id:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2878,7 +2910,7 @@ MonoBehaviour:
   level:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2887,7 +2919,7 @@ MonoBehaviour:
   exp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2896,7 +2928,7 @@ MonoBehaviour:
   currentMp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2914,7 +2946,7 @@ MonoBehaviour:
   currentFood:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2923,7 +2955,7 @@ MonoBehaviour:
   currentWater:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2932,7 +2964,7 @@ MonoBehaviour:
   equipWeapons:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2959,16 +2991,7 @@ MonoBehaviour:
   isHidding:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
-    sendInterval: 0.1
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 0
-    syncMode: 0
-    value: 0
-  movementState:
-    behaviour: {fileID: 0}
-    elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3023,7 +3046,7 @@ MonoBehaviour:
   dataId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3032,7 +3055,7 @@ MonoBehaviour:
   statPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3041,7 +3064,7 @@ MonoBehaviour:
   skillPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3050,7 +3073,7 @@ MonoBehaviour:
   gold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3059,7 +3082,7 @@ MonoBehaviour:
   userGold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3068,7 +3091,7 @@ MonoBehaviour:
   userCash:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3077,7 +3100,7 @@ MonoBehaviour:
   partyId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3086,7 +3109,7 @@ MonoBehaviour:
   guildId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3095,7 +3118,7 @@ MonoBehaviour:
   isWarping:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 4
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3109,16 +3132,6 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  stoppingDistance: 0.1
-  jumpHeight: 2
-  gravityRate: 1
-  backwardMoveSpeedRate: 0.75
-  groundCheckDistance: 0.1
-  groundCheckDistanceWhileJump: 0.01
-  stickToGroundHelperDistance: 0.5
-  shellOffset: 0
-  useNavMeshForKeyMovement: 0
-  movementSecure: 0
   writeAddonLog: 0
 --- !u!114 &114017641040235930
 MonoBehaviour:
@@ -3131,6 +3144,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f29b9cf2a5bb44c93ee7645834d9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114051749282755274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553077973440118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a250dc50d53944b80c6628ab2509d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainModel: {fileID: 114661233482712940}
+  vehicleModels: []
 --- !u!114 &114075492931202532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3214,6 +3240,7 @@ MonoBehaviour:
   syncingTransform: {fileID: 0}
   ownerClientCanSendTransform: 1
   ownerClientNotInterpolate: 1
+  ownerClientSendInterval: 0.01
   snapThreshold: 5
   movementTheshold: 0.05
   syncPositionX: 0
@@ -3244,7 +3271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92aae1982ea42e44bd513c7cc032299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataId: -1079710125
   hiddingObjects:
   - {fileID: 1513214234265184}
   effectContainers:
@@ -3253,6 +3279,8 @@ MonoBehaviour:
   - effectSocket: Body
     transform: {fileID: 4760069606981682}
   setEffectContainersBySetters: 0
+  modelManager: {fileID: 114051749282755274}
+  modelId: 
   equipmentContainers:
   - equipSocket: Head
     defaultModel: {fileID: 1739725499833660}
@@ -3914,8 +3942,6 @@ MonoBehaviour:
       fixDurationValue: 0
       extraDuration: 0
       audioClips: []
-  defaultSkillCastAnimations: []
-  skillCastAnimations: []
 --- !u!136 &136868398192971542
 CapsuleCollider:
   m_ObjectHideFlags: 1
