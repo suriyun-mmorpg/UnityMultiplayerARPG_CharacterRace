@@ -2864,7 +2864,6 @@ MonoBehaviour:
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 1
     syncMode: 0
-    value: {x: 0, y: 0}
   passengingVehicle:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2890,9 +2889,6 @@ MonoBehaviour:
   combatTextTransform: {fileID: 4240157609894612}
   opponentAimTransform: {fileID: 0}
   race: {fileID: 11400000, guid: d6fb3a74cf2c2b1419f712a741bae138, type: 2}
-  database: {fileID: 0}
-  uiElementTransform: {fileID: 0}
-  miniMapElementContainer: {fileID: 0}
   meleeDamageTransform: {fileID: 4240157609894612}
   missileDamageTransform: {fileID: 4240157609894612}
   characterUITransform: {fileID: 4907111934565064}
@@ -2961,33 +2957,6 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 0
-  equipWeapons:
-    behaviour: {fileID: 0}
-    elementId: 0
-    deliveryMethod: 3
-    sendInterval: 0.1
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 0
-    syncMode: 0
-    value:
-      rightHand:
-        dataId: 0
-        level: 0
-        amount: 0
-        durability: 0
-        exp: 0
-        lockRemainsDuration: 0
-        ammo: 0
-        sockets: 
-      leftHand:
-        dataId: 0
-        level: 0
-        amount: 0
-        durability: 0
-        exp: 0
-        lockRemainsDuration: 0
-        ammo: 0
-        sockets: 
   isHidding:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2997,6 +2966,19 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 0
+  equipWeaponSet:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 3
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    syncMode: 0
+    value: 0
+  selectableWeaponSets:
+    behaviour: {fileID: 0}
+    elementId: 0
+    forOwnerOnly: 0
   attributes:
     behaviour: {fileID: 0}
     elementId: 0
@@ -3044,6 +3026,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
   controllerPrefab: {fileID: 0}
   dataId:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 3
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    syncMode: 0
+    value: 0
+  factionId:
     behaviour: {fileID: 0}
     elementId: 0
     deliveryMethod: 3
@@ -3243,6 +3234,7 @@ MonoBehaviour:
   ownerClientSendInterval: 0.01
   snapThreshold: 5
   movementTheshold: 0.05
+  rotateTheshold: 1
   syncPositionX: 0
   syncPositionY: 0
   syncPositionZ: 0
