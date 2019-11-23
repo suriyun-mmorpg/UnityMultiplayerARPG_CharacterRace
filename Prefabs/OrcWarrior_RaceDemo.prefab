@@ -2782,15 +2782,6 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 0
-  isHidding:
-    behaviour: {fileID: 0}
-    elementId: 0
-    deliveryMethod: 3
-    sendInterval: 0.1
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 0
-    syncMode: 0
-    value: 0
   equipWeaponSet:
     behaviour: {fileID: 0}
     elementId: 0
@@ -3078,6 +3069,7 @@ MonoBehaviour:
   defaultAttackAnimations:
   - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
     triggerDurationRate: 0.5
+    multiHitTriggerDurationRates: []
     durationType: 0
     fixDurationValue: 0
     extraDuration: 0.5
@@ -3085,6 +3077,7 @@ MonoBehaviour:
     - {fileID: 0}
   - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
     triggerDurationRate: 0.5
+    multiHitTriggerDurationRates: []
     durationType: 0
     fixDurationValue: 0
     extraDuration: 0.5
@@ -3094,6 +3087,7 @@ MonoBehaviour:
   defaultSkillActivateAnimation:
     clip: {fileID: 0}
     triggerDurationRate: 0
+    multiHitTriggerDurationRates: []
     durationType: 0
     fixDurationValue: 0
     extraDuration: 0
@@ -3101,6 +3095,7 @@ MonoBehaviour:
   defaultReloadAnimation:
     clip: {fileID: 0}
     triggerDurationRate: 0
+    multiHitTriggerDurationRates: []
     durationType: 0
     fixDurationValue: 0
     extraDuration: 0

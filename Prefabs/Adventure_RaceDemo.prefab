@@ -2957,15 +2957,6 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 0
-  isHidding:
-    behaviour: {fileID: 0}
-    elementId: 0
-    deliveryMethod: 3
-    sendInterval: 0.1
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 0
-    syncMode: 0
-    value: 0
   equipWeaponSet:
     behaviour: {fileID: 0}
     elementId: 0
@@ -3385,6 +3376,7 @@ MonoBehaviour:
   defaultAttackAnimations:
   - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
     triggerDurationRate: 0.5
+    multiHitTriggerDurationRates: []
     durationType: 0
     fixDurationValue: 0
     extraDuration: 0
@@ -3392,6 +3384,7 @@ MonoBehaviour:
     - {fileID: 0}
   - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
     triggerDurationRate: 0.5
+    multiHitTriggerDurationRates: []
     durationType: 0
     fixDurationValue: 0
     extraDuration: 0
@@ -3402,6 +3395,7 @@ MonoBehaviour:
   defaultSkillActivateAnimation:
     clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
     triggerDurationRate: 0.7
+    multiHitTriggerDurationRates: []
     durationType: 0
     fixDurationValue: 0
     extraDuration: 0
@@ -3409,6 +3403,7 @@ MonoBehaviour:
   defaultReloadAnimation:
     clip: {fileID: 0}
     triggerDurationRate: 1
+    multiHitTriggerDurationRates: []
     durationType: 1
     fixDurationValue: 0.75
     extraDuration: 0
@@ -3431,6 +3426,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: 6e7f96b5c5df8814b98d21a4916bb379, type: 3}
       triggerDurationRate: 0.7
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3439,6 +3435,7 @@ MonoBehaviour:
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: 6e7f96b5c5df8814b98d21a4916bb379, type: 3}
       triggerDurationRate: 0.7
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3446,6 +3443,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3453,6 +3451,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3474,6 +3473,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3481,6 +3481,7 @@ MonoBehaviour:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3489,12 +3490,14 @@ MonoBehaviour:
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
       audioClips: []
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3502,6 +3505,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3509,6 +3513,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3530,6 +3535,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3537,6 +3543,7 @@ MonoBehaviour:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3545,6 +3552,7 @@ MonoBehaviour:
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3552,6 +3560,7 @@ MonoBehaviour:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3560,6 +3569,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3567,6 +3577,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3588,6 +3599,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3595,6 +3607,7 @@ MonoBehaviour:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3603,12 +3616,14 @@ MonoBehaviour:
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
       audioClips: []
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3616,6 +3631,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3623,6 +3639,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3644,6 +3661,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3651,6 +3669,7 @@ MonoBehaviour:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3659,12 +3678,14 @@ MonoBehaviour:
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
       audioClips: []
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
       triggerDurationRate: 0.5
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3672,6 +3693,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3679,6 +3701,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3704,6 +3727,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: e78ec75f26c88a041aba682b10c5a911, type: 2}
       triggerDurationRate: 0.1
+      multiHitTriggerDurationRates: []
       durationType: 1
       fixDurationValue: 0.025
       extraDuration: 0
@@ -3713,6 +3737,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 1
+      multiHitTriggerDurationRates: []
       durationType: 1
       fixDurationValue: 0.75
       extraDuration: 0
@@ -3721,6 +3746,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3746,6 +3772,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: e78ec75f26c88a041aba682b10c5a911, type: 2}
       triggerDurationRate: 0.1
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3755,6 +3782,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 1
+      multiHitTriggerDurationRates: []
       durationType: 1
       fixDurationValue: 0.75
       extraDuration: 0
@@ -3763,6 +3791,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3788,6 +3817,7 @@ MonoBehaviour:
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: e78ec75f26c88a041aba682b10c5a911, type: 2}
       triggerDurationRate: 0.1
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3797,6 +3827,7 @@ MonoBehaviour:
     rightHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 1
+      multiHitTriggerDurationRates: []
       durationType: 1
       fixDurationValue: 0.75
       extraDuration: 0
@@ -3805,6 +3836,7 @@ MonoBehaviour:
     leftHandReloadAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3816,6 +3848,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
       triggerDurationRate: 0.7
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3827,6 +3860,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3837,6 +3871,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3847,6 +3882,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3857,6 +3893,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3867,6 +3904,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3877,6 +3915,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
       triggerDurationRate: 0.7
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3888,6 +3927,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3898,6 +3938,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3908,6 +3949,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3918,6 +3960,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3928,6 +3971,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 0}
       triggerDurationRate: 0
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
@@ -3938,6 +3982,7 @@ MonoBehaviour:
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
       triggerDurationRate: 0.75
+      multiHitTriggerDurationRates: []
       durationType: 0
       fixDurationValue: 0
       extraDuration: 0
