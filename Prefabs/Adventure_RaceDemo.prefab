@@ -2847,6 +2847,9 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 
+  model: {fileID: 114661233482712940}
+  cameraTargetTransform: {fileID: 0}
+  movementSecure: 0
   movementState:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2856,7 +2859,16 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 1
     syncMode: 0
     value: 0
-  currentDirection:
+  extraMovementState:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 2
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 1
+    syncMode: 0
+    value: 0
+  direction2D:
     behaviour: {fileID: 0}
     elementId: 0
     deliveryMethod: 2
@@ -2875,8 +2887,8 @@ MonoBehaviour:
     value:
       objectId: 0
       seatIndex: 0
-  cameraTargetTransform: {fileID: 0}
-  model: {fileID: 114661233482712940}
+  combatTextTransform: {fileID: 4240157609894612}
+  opponentAimTransform: {fileID: 0}
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2886,8 +2898,6 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 0
-  combatTextTransform: {fileID: 4240157609894612}
-  opponentAimTransform: {fileID: 0}
   race: {fileID: 11400000, guid: d6fb3a74cf2c2b1419f712a741bae138, type: 2}
   meleeDamageTransform: {fileID: 4240157609894612}
   missileDamageTransform: {fileID: 4240157609894612}
@@ -3147,6 +3157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainModel: {fileID: 114661233482712940}
+  fpsModelPrefab: {fileID: 0}
   vehicleModels: []
 --- !u!114 &114075492931202532
 MonoBehaviour:
@@ -3196,6 +3207,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 82448056664777988}
+  moveFootstepSettings:
+    soundData:
+      randomAudioClips:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    stepDelay: 0.35
+    stepThreshold: 0.1
+    randomVolumeMin: 0.15
+    randomVolumeMax: 0.3
+    randomPitchMin: 0.75
+    randomPitchMax: 1
+  sprintFootstepSettings:
+    soundData:
+      randomAudioClips: []
+    stepDelay: 0.35
+    stepThreshold: 0.1
+    randomVolumeMin: 0.75
+    randomVolumeMax: 1
+    randomPitchMin: 0.75
+    randomPitchMax: 1
+  crouchFootstepSettings:
+    soundData:
+      randomAudioClips: []
+    stepDelay: 0.35
+    stepThreshold: 0.1
+    randomVolumeMin: 0.75
+    randomVolumeMax: 1
+    randomPitchMin: 0.75
+    randomPitchMax: 1
+  crawlFootstepSettings:
+    soundData:
+      randomAudioClips: []
+    stepDelay: 0.35
+    stepThreshold: 0.1
+    randomVolumeMin: 0.75
+    randomVolumeMax: 1
+    randomPitchMin: 0.75
+    randomPitchMax: 1
+  swimFootstepSettings:
+    soundData:
+      randomAudioClips: []
+    stepDelay: 0.35
+    stepThreshold: 0.1
+    randomVolumeMin: 0.75
+    randomVolumeMax: 1
+    randomPitchMin: 0.75
+    randomPitchMax: 1
   soundData:
     randomAudioClips:
     - {fileID: 0}
@@ -3265,13 +3331,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hiddingObjects:
   - {fileID: 1513214234265184}
+  hiddingRenderers: []
   effectContainers:
   - effectSocket: Floor
     transform: {fileID: 4811971151299258}
   - effectSocket: Body
     transform: {fileID: 4760069606981682}
   setEffectContainersBySetters: 0
-  modelManager: {fileID: 114051749282755274}
   equipmentContainers:
   - equipSocket: Head
     defaultModel: {fileID: 1739725499833660}
@@ -3419,6 +3485,46 @@ MonoBehaviour:
     moveForwardRightClip: {fileID: 0}
     moveBackwardLeftClip: {fileID: 0}
     moveBackwardRightClip: {fileID: 0}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3466,6 +3572,46 @@ MonoBehaviour:
     moveForwardRightClip: {fileID: 0}
     moveBackwardLeftClip: {fileID: 0}
     moveBackwardRightClip: {fileID: 0}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3528,6 +3674,46 @@ MonoBehaviour:
     moveForwardRightClip: {fileID: 0}
     moveBackwardLeftClip: {fileID: 0}
     moveBackwardRightClip: {fileID: 0}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3592,6 +3778,46 @@ MonoBehaviour:
     moveForwardRightClip: {fileID: 0}
     moveBackwardLeftClip: {fileID: 0}
     moveBackwardRightClip: {fileID: 0}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3654,6 +3880,46 @@ MonoBehaviour:
     moveForwardRightClip: {fileID: 0}
     moveBackwardLeftClip: {fileID: 0}
     moveBackwardRightClip: {fileID: 0}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3720,6 +3986,46 @@ MonoBehaviour:
       type: 2}
     moveBackwardRightClip: {fileID: 7400000, guid: 8ff2a83c58a78c246968c0034442130b,
       type: 2}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3765,6 +4071,46 @@ MonoBehaviour:
       type: 2}
     moveBackwardRightClip: {fileID: 7400000, guid: 8ff2a83c58a78c246968c0034442130b,
       type: 2}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
@@ -3810,6 +4156,46 @@ MonoBehaviour:
       type: 2}
     moveBackwardRightClip: {fileID: 7400000, guid: 8ff2a83c58a78c246968c0034442130b,
       type: 2}
+    moveAnimSpeedRate: 0
+    sprintClip: {fileID: 0}
+    sprintBackwardClip: {fileID: 0}
+    sprintLeftClip: {fileID: 0}
+    sprintRightClip: {fileID: 0}
+    sprintForwardLeftClip: {fileID: 0}
+    sprintForwardRightClip: {fileID: 0}
+    sprintBackwardLeftClip: {fileID: 0}
+    sprintBackwardRightClip: {fileID: 0}
+    sprintAnimSpeedRate: 0
+    crouchIdleClip: {fileID: 0}
+    crouchMoveClip: {fileID: 0}
+    crouchMoveBackwardClip: {fileID: 0}
+    crouchMoveLeftClip: {fileID: 0}
+    crouchMoveRightClip: {fileID: 0}
+    crouchMoveForwardLeftClip: {fileID: 0}
+    crouchMoveForwardRightClip: {fileID: 0}
+    crouchMoveBackwardLeftClip: {fileID: 0}
+    crouchMoveBackwardRightClip: {fileID: 0}
+    crouchMoveAnimSpeedRate: 0
+    crawlIdleClip: {fileID: 0}
+    crawlMoveClip: {fileID: 0}
+    crawlMoveBackwardClip: {fileID: 0}
+    crawlMoveLeftClip: {fileID: 0}
+    crawlMoveRightClip: {fileID: 0}
+    crawlMoveForwardLeftClip: {fileID: 0}
+    crawlMoveForwardRightClip: {fileID: 0}
+    crawlMoveBackwardLeftClip: {fileID: 0}
+    crawlMoveBackwardRightClip: {fileID: 0}
+    crawlMoveAnimSpeedRate: 0
+    swimIdleClip: {fileID: 0}
+    swimMoveClip: {fileID: 0}
+    swimMoveBackwardClip: {fileID: 0}
+    swimMoveLeftClip: {fileID: 0}
+    swimMoveRightClip: {fileID: 0}
+    swimMoveForwardLeftClip: {fileID: 0}
+    swimMoveForwardRightClip: {fileID: 0}
+    swimMoveBackwardLeftClip: {fileID: 0}
+    swimMoveBackwardRightClip: {fileID: 0}
+    swimMoveAnimSpeedRate: 0
     jumpClip: {fileID: 0}
     fallClip: {fileID: 0}
     hurtClip: {fileID: 0}
