@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -980,10 +980,10 @@ MonoBehaviour:
   characterModelContainer: {fileID: 1620260896}
   buttonStart: {fileID: 1979356302}
   buttonDelete: {fileID: 1616698438}
-  eventOnSelectCharacter:
+  eventOnNoCharacter:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: MultiplayerARPG.CharacterDataEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &186974760
 MonoBehaviour:
@@ -2367,8 +2367,12 @@ MonoBehaviour:
   objectSelected: {fileID: 0}
   selectionManager: {fileID: 0}
   updateUIRepeatRate: 0.5
-  titleFormat: '{0}'
-  descriptionFormat: '{0}'
+  formatKeyTitle:
+    localeKey: 5
+    customKey: 
+  formatKeyDescription:
+    localeKey: 5
+    customKey: 
   uiTextTitle: {fileID: 0}
   uiTextDescription: {fileID: 641900829}
   imageIcon: {fileID: 0}
@@ -5410,6 +5414,8 @@ MonoBehaviour:
   uiCharacterClassPrefab: {fileID: 114151139325336964, guid: 753975a42ba969148a82c3014fbf582d,
     type: 2}
   uiCharacterClassContainer: {fileID: 1437313252}
+  uiFactionPrefab: {fileID: 0}
+  uiFactionContainer: {fileID: 0}
   characterModelContainer: {fileID: 1620260896}
   inputCharacterName: {fileID: 195991}
   buttonCreate: {fileID: 259296659}
@@ -5434,6 +5440,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: MultiplayerARPG.CharacterDataEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  eventOnSelectFaction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: MultiplayerARPG.FactionEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   eventOnSelectCharacterClass:
     m_PersistentCalls:
       m_Calls:
@@ -5797,6 +5808,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   inputNetworkAddress: {fileID: 782647110}
+  discoveryEntryPrefab: {fileID: 0}
+  discoveryEntryContainer: {fileID: 0}
 --- !u!1 &1979356300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,7 +5973,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -6021,7 +6034,6 @@ MonoBehaviour:
   firstUI: {fileID: 849804232}
   uiLanConnection: {fileID: 1961888509}
   uiCharacterList: {fileID: 186974758}
-  uiCharacterCreate: {fileID: 1844824177}
 --- !u!1 &2115320366
 GameObject:
   m_ObjectHideFlags: 0
