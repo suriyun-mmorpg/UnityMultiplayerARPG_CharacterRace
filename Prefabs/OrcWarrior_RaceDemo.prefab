@@ -2683,7 +2683,7 @@ MonoBehaviour:
     elementId: 0
     deliveryMethod: 2
     sendInterval: 0.1
-    alwaysSync: 0
+    alwaysSync: 1
     doNotSyncInitialDataImmediately: 1
     syncMode: 0
     value: 0
@@ -2692,7 +2692,7 @@ MonoBehaviour:
     elementId: 0
     deliveryMethod: 2
     sendInterval: 0.1
-    alwaysSync: 0
+    alwaysSync: 1
     doNotSyncInitialDataImmediately: 1
     syncMode: 0
     value: 0
@@ -2808,6 +2808,15 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     deliveryMethod: 2
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    syncMode: 2
+    value: 0
+  targetEntityId:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 3
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2945,6 +2954,24 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 0
     value: 0
+  respawnMapName:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 3
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    syncMode: 0
+    value: 
+  respawnPosition:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 3
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    syncMode: 0
+    value: {x: 0, y: 0, z: 0}
   isWarping:
     behaviour: {fileID: 0}
     elementId: 0
@@ -2954,6 +2981,24 @@ MonoBehaviour:
     doNotSyncInitialDataImmediately: 0
     syncMode: 1
     value: 0
+  hasAimPosition:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 3
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    syncMode: 2
+    value: 0
+  aimPosition:
+    behaviour: {fileID: 0}
+    elementId: 0
+    deliveryMethod: 2
+    sendInterval: 0.1
+    alwaysSync: 0
+    doNotSyncInitialDataImmediately: 0
+    syncMode: 2
+    value: {x: 0, y: 0, z: 0}
   hotkeys:
     behaviour: {fileID: 0}
     elementId: 0
@@ -3119,6 +3164,11 @@ MonoBehaviour:
     audioClips: []
   weaponAnimations: []
   skillAnimations: []
+  testAnimActionType: 0
+  testWeaponType: {fileID: 0}
+  testSkill: {fileID: 0}
+  testAttackAnimIndex: 0
+  setAnimatorClipsForTest: 0
 --- !u!114 &114706046604278806
 MonoBehaviour:
   m_ObjectHideFlags: 1
