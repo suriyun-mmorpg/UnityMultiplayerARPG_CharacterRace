@@ -2832,7 +2832,7 @@ MonoBehaviour:
   syncTitle:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2841,7 +2841,7 @@ MonoBehaviour:
   syncTitleB:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2854,7 +2854,7 @@ MonoBehaviour:
   movementState:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 1
     doNotSyncInitialDataImmediately: 1
@@ -2863,7 +2863,7 @@ MonoBehaviour:
   extraMovementState:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 1
     doNotSyncInitialDataImmediately: 1
@@ -2872,7 +2872,7 @@ MonoBehaviour:
   direction2D:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 1
@@ -2880,7 +2880,7 @@ MonoBehaviour:
   passengingVehicle:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 1
@@ -2888,12 +2888,14 @@ MonoBehaviour:
     value:
       objectId: 0
       seatIndex: 0
+  canSideSprint: 0
+  canBackwardSprint: 0
   combatTextTransform: {fileID: 4240157609894612}
   opponentAimTransform: {fileID: 0}
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2908,7 +2910,7 @@ MonoBehaviour:
   id:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2917,7 +2919,7 @@ MonoBehaviour:
   level:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2926,7 +2928,7 @@ MonoBehaviour:
   exp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2935,7 +2937,7 @@ MonoBehaviour:
   currentMp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2953,7 +2955,7 @@ MonoBehaviour:
   currentFood:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2962,7 +2964,7 @@ MonoBehaviour:
   currentWater:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2971,7 +2973,7 @@ MonoBehaviour:
   equipWeaponSet:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2980,7 +2982,7 @@ MonoBehaviour:
   pitch:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2989,7 +2991,7 @@ MonoBehaviour:
   targetEntityId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3027,20 +3029,6 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  umaAvatarData:
-    behaviour: {fileID: 0}
-    elementId: 0
-    deliveryMethod: 0
-    sendInterval: 0.1
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 0
-    syncMode: 0
-    value:
-      raceIndex: 0
-      genderIndex: 0
-      colors: 
-      slots: 
-      dnas: 
   characterTitle: Character Model (Animator)
   characterTitles: []
   playerCharacters:
@@ -3049,7 +3037,7 @@ MonoBehaviour:
   dataId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3058,7 +3046,7 @@ MonoBehaviour:
   factionId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3067,7 +3055,7 @@ MonoBehaviour:
   statPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3076,7 +3064,7 @@ MonoBehaviour:
   skillPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3085,7 +3073,7 @@ MonoBehaviour:
   gold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3094,7 +3082,7 @@ MonoBehaviour:
   userGold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3103,7 +3091,7 @@ MonoBehaviour:
   userCash:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3112,7 +3100,7 @@ MonoBehaviour:
   partyId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3121,7 +3109,7 @@ MonoBehaviour:
   guildId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3130,7 +3118,7 @@ MonoBehaviour:
   respawnMapName:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3139,7 +3127,7 @@ MonoBehaviour:
   respawnPosition:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3148,7 +3136,7 @@ MonoBehaviour:
   isWarping:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3157,7 +3145,7 @@ MonoBehaviour:
   hasAimPosition:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3166,7 +3154,7 @@ MonoBehaviour:
   aimPosition:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3391,57 +3379,93 @@ MonoBehaviour:
   modelManager: {fileID: 0}
   equipmentContainers:
   - equipSocket: Head
+    transform: {fileID: 4724637677875670}
     defaultModel: {fileID: 1739725499833660}
-    transform: {fileID: 4724637677875670}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: Hair
+    transform: {fileID: 4724637677875670}
     defaultModel: {fileID: 1775942014633990}
-    transform: {fileID: 4724637677875670}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: HeadAccessories
-    defaultModel: {fileID: 0}
     transform: {fileID: 4724637677875670}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ShoulderR
-    defaultModel: {fileID: 1680461799829100}
     transform: {fileID: 4437800736401624}
+    defaultModel: {fileID: 1680461799829100}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ElbowR
-    defaultModel: {fileID: 1037919308490940}
     transform: {fileID: 4157131081333734}
+    defaultModel: {fileID: 1037919308490940}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: WeaponR
-    defaultModel: {fileID: 0}
     transform: {fileID: 4000394762545568}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ShoulderL
-    defaultModel: {fileID: 1804900846595880}
     transform: {fileID: 4650861225300918}
+    defaultModel: {fileID: 1804900846595880}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ElbowL
-    defaultModel: {fileID: 1860519387118200}
     transform: {fileID: 4411569831533092}
+    defaultModel: {fileID: 1860519387118200}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: WeaponL
-    defaultModel: {fileID: 0}
     transform: {fileID: 4237573134113988}
-  - equipSocket: Shield
     defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
+  - equipSocket: Shield
     transform: {fileID: 4392114914239654}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: Chest
-    defaultModel: {fileID: 1648319118305418}
     transform: {fileID: 4985216958980354}
+    defaultModel: {fileID: 1648319118305418}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: Spine
-    defaultModel: {fileID: 1639792376016526}
     transform: {fileID: 4423239049039626}
+    defaultModel: {fileID: 1639792376016526}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: LowerSpine
-    defaultModel: {fileID: 1024976000016768}
     transform: {fileID: 4931508649419182}
+    defaultModel: {fileID: 1024976000016768}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: HipR
-    defaultModel: {fileID: 1879572612975078}
     transform: {fileID: 4119090936210292}
+    defaultModel: {fileID: 1879572612975078}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: KneeR
-    defaultModel: {fileID: 1108659400517166}
     transform: {fileID: 4775172863903004}
+    defaultModel: {fileID: 1108659400517166}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: HipL
-    defaultModel: {fileID: 1766380081539138}
     transform: {fileID: 4711340290968164}
+    defaultModel: {fileID: 1766380081539138}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: KneeL
-    defaultModel: {fileID: 1442090587856542}
     transform: {fileID: 4240694416600172}
+    defaultModel: {fileID: 1442090587856542}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   setEquipmentContainersBySetters: 0
+  deactivateInstantiatedObjects: 0
+  activateInstantiateObject: 0
   animatorType: 0
   animator: {fileID: 95222642458346626}
   animatorController: {fileID: 9100000, guid: aca92839e11ce3f4c8503f232221dc80, type: 2}
@@ -3492,6 +3516,7 @@ MonoBehaviour:
   skinnedMeshRenderer: {fileID: 0}
   defaultAttackAnimations:
   - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+    playClipAllLayers: 0
     triggerDurationRate: 0.5
     multiHitTriggerDurationRates: []
     durationType: 0
@@ -3500,6 +3525,7 @@ MonoBehaviour:
     audioClips:
     - {fileID: 0}
   - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+    playClipAllLayers: 0
     triggerDurationRate: 0.5
     multiHitTriggerDurationRates: []
     durationType: 0
@@ -3511,6 +3537,7 @@ MonoBehaviour:
     type: 3}
   defaultSkillActivateAnimation:
     clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+    playClipAllLayers: 0
     triggerDurationRate: 0.7
     multiHitTriggerDurationRates: []
     durationType: 0
@@ -3519,6 +3546,7 @@ MonoBehaviour:
     audioClips: []
   defaultReloadAnimation:
     clip: {fileID: 0}
+    playClipAllLayers: 0
     triggerDurationRate: 1
     multiHitTriggerDurationRates: []
     durationType: 1
@@ -3546,6 +3574,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -3582,6 +3619,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: 6e7f96b5c5df8814b98d21a4916bb379, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.7
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3591,6 +3629,7 @@ MonoBehaviour:
       - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: 6e7f96b5c5df8814b98d21a4916bb379, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.7
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3599,6 +3638,7 @@ MonoBehaviour:
       audioClips: []
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3607,6 +3647,7 @@ MonoBehaviour:
       audioClips: []
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3633,6 +3674,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -3669,6 +3719,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3677,6 +3728,7 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3686,6 +3738,7 @@ MonoBehaviour:
       - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3693,6 +3746,7 @@ MonoBehaviour:
       extraDuration: 0
       audioClips: []
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3701,6 +3755,7 @@ MonoBehaviour:
       audioClips: []
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3709,6 +3764,7 @@ MonoBehaviour:
       audioClips: []
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3735,6 +3791,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -3771,6 +3836,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3779,6 +3845,7 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3788,6 +3855,7 @@ MonoBehaviour:
       - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3796,6 +3864,7 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3805,6 +3874,7 @@ MonoBehaviour:
       - {fileID: 0}
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3813,6 +3883,7 @@ MonoBehaviour:
       audioClips: []
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3839,6 +3910,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -3875,6 +3955,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3883,6 +3964,7 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3892,6 +3974,7 @@ MonoBehaviour:
       - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3899,6 +3982,7 @@ MonoBehaviour:
       extraDuration: 0
       audioClips: []
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3907,6 +3991,7 @@ MonoBehaviour:
       audioClips: []
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3915,6 +4000,7 @@ MonoBehaviour:
       audioClips: []
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3941,6 +4027,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -3977,6 +4072,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3985,6 +4081,7 @@ MonoBehaviour:
       audioClips:
       - {fileID: 0}
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -3994,6 +4091,7 @@ MonoBehaviour:
       - {fileID: 0}
     leftHandAttackAnimations:
     - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4001,6 +4099,7 @@ MonoBehaviour:
       extraDuration: 0
       audioClips: []
     - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.5
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4009,6 +4108,7 @@ MonoBehaviour:
       audioClips: []
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4017,6 +4117,7 @@ MonoBehaviour:
       audioClips: []
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4047,6 +4148,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -4083,6 +4193,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: e78ec75f26c88a041aba682b10c5a911, type: 2}
+      playClipAllLayers: 0
       triggerDurationRate: 0.1
       multiHitTriggerDurationRates: []
       durationType: 1
@@ -4093,6 +4204,7 @@ MonoBehaviour:
     leftHandAttackAnimations: []
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 1
       multiHitTriggerDurationRates: []
       durationType: 1
@@ -4102,6 +4214,7 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 34984ea09f40e2f4c8b201f5e1a76876, type: 3}
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4132,6 +4245,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -4168,6 +4290,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: e78ec75f26c88a041aba682b10c5a911, type: 2}
+      playClipAllLayers: 0
       triggerDurationRate: 0.1
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4178,6 +4301,7 @@ MonoBehaviour:
     leftHandAttackAnimations: []
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 1
       multiHitTriggerDurationRates: []
       durationType: 1
@@ -4187,6 +4311,7 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 34984ea09f40e2f4c8b201f5e1a76876, type: 3}
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4217,6 +4342,15 @@ MonoBehaviour:
     sprintBackwardLeftClip: {fileID: 0}
     sprintBackwardRightClip: {fileID: 0}
     sprintAnimSpeedRate: 0
+    walkClip: {fileID: 0}
+    walkBackwardClip: {fileID: 0}
+    walkLeftClip: {fileID: 0}
+    walkRightClip: {fileID: 0}
+    walkForwardLeftClip: {fileID: 0}
+    walkForwardRightClip: {fileID: 0}
+    walkBackwardLeftClip: {fileID: 0}
+    walkBackwardRightClip: {fileID: 0}
+    walkAnimSpeedRate: 0
     crouchIdleClip: {fileID: 0}
     crouchMoveClip: {fileID: 0}
     crouchMoveBackwardClip: {fileID: 0}
@@ -4253,6 +4387,7 @@ MonoBehaviour:
     deadClip: {fileID: 0}
     rightHandAttackAnimations:
     - clip: {fileID: 7400000, guid: e78ec75f26c88a041aba682b10c5a911, type: 2}
+      playClipAllLayers: 0
       triggerDurationRate: 0.1
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4263,6 +4398,7 @@ MonoBehaviour:
     leftHandAttackAnimations: []
     rightHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 1
       multiHitTriggerDurationRates: []
       durationType: 1
@@ -4272,6 +4408,7 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 34984ea09f40e2f4c8b201f5e1a76876, type: 3}
     leftHandReloadAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4281,9 +4418,11 @@ MonoBehaviour:
   skillAnimations:
   - skill: {fileID: 11400000, guid: e51e32bb6c31b564a9e211e7b65c82ec, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.7
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4293,9 +4432,11 @@ MonoBehaviour:
       - {fileID: 0}
   - skill: {fileID: 11400000, guid: 2da121bb20bbc844bafd830dcb439578, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4304,9 +4445,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: 62050ee15b839a04080e8d1764fc4737, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4315,9 +4458,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: b9f63b3b2f7be634e9493c7acfb8ef54, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.75
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4326,9 +4471,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: 417c6b4c5515bd84a9bee4c80ea404fa, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.75
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4337,9 +4484,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: 342c2acc88ca3f34ab00cf7f43775edf, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 1
     activateAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4348,9 +4497,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: aa4fffff388c1634397b4bdcdb18a4fa, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 7400000, guid: 33d4723e91ac65349a8675586772685a, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.7
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4360,9 +4511,11 @@ MonoBehaviour:
       - {fileID: 0}
   - skill: {fileID: 11400000, guid: d55d8bfb45f9c574d9120b6ffcd66e3c, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.75
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4371,9 +4524,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: c0bba1d7b0967e3428404a9fc3211a7b, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 1
     activateAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4382,9 +4537,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: 25f18d3131d816146b890611d9123df4, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4393,9 +4550,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: c036ac5144bfb36428bd9b2fa2a5ce2c, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.75
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4404,9 +4563,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: 00144a2dd7250bb4ab60d49c66cc48f0, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 1
     activateAnimation:
       clip: {fileID: 0}
+      playClipAllLayers: 0
       triggerDurationRate: 0
       multiHitTriggerDurationRates: []
       durationType: 0
@@ -4415,9 +4576,11 @@ MonoBehaviour:
       audioClips: []
   - skill: {fileID: 11400000, guid: 558b16358ddfa6346b5e5e6211155da6, type: 2}
     castClip: {fileID: 0}
+    playCastClipAllLayers: 0
     activateAnimationType: 0
     activateAnimation:
       clip: {fileID: 7400000, guid: b17e91ae0ce283142b35a258704d1a3e, type: 3}
+      playClipAllLayers: 0
       triggerDurationRate: 0.75
       multiHitTriggerDurationRates: []
       durationType: 0

@@ -2659,7 +2659,7 @@ MonoBehaviour:
   syncTitle:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2668,7 +2668,7 @@ MonoBehaviour:
   syncTitleB:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2681,7 +2681,7 @@ MonoBehaviour:
   movementState:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 1
     doNotSyncInitialDataImmediately: 1
@@ -2690,7 +2690,7 @@ MonoBehaviour:
   extraMovementState:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 1
     doNotSyncInitialDataImmediately: 1
@@ -2699,7 +2699,7 @@ MonoBehaviour:
   direction2D:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 1
@@ -2707,7 +2707,7 @@ MonoBehaviour:
   passengingVehicle:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 1
@@ -2715,12 +2715,14 @@ MonoBehaviour:
     value:
       objectId: 0
       seatIndex: 0
+  canSideSprint: 0
+  canBackwardSprint: 0
   combatTextTransform: {fileID: 4739274400074772}
   opponentAimTransform: {fileID: 0}
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2735,7 +2737,7 @@ MonoBehaviour:
   id:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2744,7 +2746,7 @@ MonoBehaviour:
   level:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2753,7 +2755,7 @@ MonoBehaviour:
   exp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2762,7 +2764,7 @@ MonoBehaviour:
   currentMp:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2780,7 +2782,7 @@ MonoBehaviour:
   currentFood:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2789,7 +2791,7 @@ MonoBehaviour:
   currentWater:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2798,7 +2800,7 @@ MonoBehaviour:
   equipWeaponSet:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2807,7 +2809,7 @@ MonoBehaviour:
   pitch:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2816,7 +2818,7 @@ MonoBehaviour:
   targetEntityId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2854,20 +2856,6 @@ MonoBehaviour:
     behaviour: {fileID: 0}
     elementId: 0
     forOwnerOnly: 1
-  umaAvatarData:
-    behaviour: {fileID: 0}
-    elementId: 0
-    deliveryMethod: 0
-    sendInterval: 0.1
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 0
-    syncMode: 0
-    value:
-      raceIndex: 0
-      genderIndex: 0
-      colors: 
-      slots: 
-      dnas: 
   characterTitle: Orchid
   characterTitles: []
   playerCharacters:
@@ -2876,7 +2864,7 @@ MonoBehaviour:
   dataId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2885,7 +2873,7 @@ MonoBehaviour:
   factionId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2894,7 +2882,7 @@ MonoBehaviour:
   statPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2903,7 +2891,7 @@ MonoBehaviour:
   skillPoint:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2912,7 +2900,7 @@ MonoBehaviour:
   gold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2921,7 +2909,7 @@ MonoBehaviour:
   userGold:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2930,7 +2918,7 @@ MonoBehaviour:
   userCash:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2939,7 +2927,7 @@ MonoBehaviour:
   partyId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2948,7 +2936,7 @@ MonoBehaviour:
   guildId:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2957,7 +2945,7 @@ MonoBehaviour:
   respawnMapName:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2966,7 +2954,7 @@ MonoBehaviour:
   respawnPosition:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2975,7 +2963,7 @@ MonoBehaviour:
   isWarping:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2984,7 +2972,7 @@ MonoBehaviour:
   hasAimPosition:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 3
+    deliveryMethod: 2
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -2993,7 +2981,7 @@ MonoBehaviour:
   aimPosition:
     behaviour: {fileID: 0}
     elementId: 0
-    deliveryMethod: 2
+    deliveryMethod: 1
     sendInterval: 0.1
     alwaysSync: 0
     doNotSyncInitialDataImmediately: 0
@@ -3033,57 +3021,93 @@ MonoBehaviour:
   modelManager: {fileID: 0}
   equipmentContainers:
   - equipSocket: Head
-    defaultModel: {fileID: 0}
     transform: {fileID: 4514950278665816}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: Hair
-    defaultModel: {fileID: 0}
     transform: {fileID: 4514950278665816}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: HeadAccessories
-    defaultModel: {fileID: 0}
     transform: {fileID: 4514950278665816}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ShoulderR
-    defaultModel: {fileID: 0}
     transform: {fileID: 4124164592732880}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ElbowR
-    defaultModel: {fileID: 0}
     transform: {fileID: 4897050616234484}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: WeaponR
-    defaultModel: {fileID: 0}
     transform: {fileID: 4575783988717642}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ShoulderL
-    defaultModel: {fileID: 0}
     transform: {fileID: 4763405605592918}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: ElbowL
-    defaultModel: {fileID: 0}
     transform: {fileID: 4574016020541244}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: WeaponL
-    defaultModel: {fileID: 0}
     transform: {fileID: 4692660374711316}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: Shield
-    defaultModel: {fileID: 0}
     transform: {fileID: 4240422490853004}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: Chest
-    defaultModel: {fileID: 0}
     transform: {fileID: 4559513089490318}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: Spine
-    defaultModel: {fileID: 0}
     transform: {fileID: 4804608167933496}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: LowerSpine
-    defaultModel: {fileID: 0}
     transform: {fileID: 4664575228657976}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: HipR
-    defaultModel: {fileID: 0}
     transform: {fileID: 4681452989931012}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: KneeR
-    defaultModel: {fileID: 0}
     transform: {fileID: 4164828748820696}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   - equipSocket: HipL
-    defaultModel: {fileID: 0}
     transform: {fileID: 4751612090690904}
-  - equipSocket: KneeL
     defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
+  - equipSocket: KneeL
     transform: {fileID: 4653603705249950}
+    defaultModel: {fileID: 0}
+    instantiatedObjects: []
+    activatingInstantiateObjectIndex: 0
   setEquipmentContainersBySetters: 0
+  deactivateInstantiatedObjects: 0
+  activateInstantiateObject: 0
   animatorType: 0
   animator: {fileID: 95656639932681360}
   animatorController: {fileID: 9100000, guid: 767c78a88875d8749b9859d001ddb647, type: 2}
@@ -3130,6 +3154,7 @@ MonoBehaviour:
   skinnedMeshRenderer: {fileID: 0}
   defaultAttackAnimations:
   - clip: {fileID: 7400000, guid: b879d93f6ad2e3d4681e180c8716daf1, type: 3}
+    playClipAllLayers: 0
     triggerDurationRate: 0.5
     multiHitTriggerDurationRates: []
     durationType: 0
@@ -3138,6 +3163,7 @@ MonoBehaviour:
     audioClips:
     - {fileID: 0}
   - clip: {fileID: 7400000, guid: e9c5add18fadf164a9f5e656dea581d5, type: 3}
+    playClipAllLayers: 0
     triggerDurationRate: 0.5
     multiHitTriggerDurationRates: []
     durationType: 0
@@ -3148,6 +3174,7 @@ MonoBehaviour:
   defaultSkillCastClip: {fileID: 0}
   defaultSkillActivateAnimation:
     clip: {fileID: 0}
+    playClipAllLayers: 0
     triggerDurationRate: 0
     multiHitTriggerDurationRates: []
     durationType: 0
@@ -3156,6 +3183,7 @@ MonoBehaviour:
     audioClips: []
   defaultReloadAnimation:
     clip: {fileID: 0}
+    playClipAllLayers: 0
     triggerDurationRate: 0
     multiHitTriggerDurationRates: []
     durationType: 0
