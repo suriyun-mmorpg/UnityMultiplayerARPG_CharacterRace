@@ -2623,6 +2623,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f29b9cf2a5bb44c93ee7645834d9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behaviourIndex: 0
+  sendOptions: 0
+  sendInterval: 0.1
 --- !u!114 &114529724998861372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2634,6 +2637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a250dc50d53944b80c6628ab2509d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behaviourIndex: 0
+  sendOptions: 0
+  sendInterval: 0.1
   mainModel: {fileID: 114668736016833334}
   fpsModelPrefab: {fileID: 0}
   fpsModelOffsets: {x: 0, y: 0, z: 0}
@@ -2858,7 +2864,7 @@ MonoBehaviour:
     forOwnerOnly: 1
   characterTitle: Orchid
   characterTitles: []
-  playerCharacters:
+  characterDatabases:
   - {fileID: 11400000, guid: cf6edc4904d9d70438169ffc4f6b6f8c, type: 2}
   controllerPrefab: {fileID: 0}
   dataId:
@@ -3271,6 +3277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e69745e3d4eccf94bb5c64b2011ec1c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  behaviourIndex: 0
+  sendOptions: 0
+  sendInterval: 0.1
 --- !u!136 &136243329345557636
 CapsuleCollider:
   m_ObjectHideFlags: 1
