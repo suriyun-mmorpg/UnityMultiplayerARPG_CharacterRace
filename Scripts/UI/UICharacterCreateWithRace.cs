@@ -28,7 +28,7 @@ namespace MultiplayerARPG
 
         private readonly HashSet<CharacterRace> selectedRaces = new HashSet<CharacterRace>();
 
-        public override void Show()
+        protected override void OnEnable()
         {
             foreach (KeyValuePair<CharacterRace, Toggle> raceToggle in CacheRaceToggles)
             {
@@ -39,7 +39,7 @@ namespace MultiplayerARPG
                 });
                 OnRaceToggleUpdate(raceToggle.Key, raceToggle.Value.isOn);
             }
-            base.Show();
+            base.OnEnable();
         }
 
         protected override List<BasePlayerCharacterEntity> GetCreatableCharacters()
