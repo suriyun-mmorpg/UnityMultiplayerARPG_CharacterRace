@@ -1066,7 +1066,7 @@ MonoBehaviour:
     activatingInstantiateObjectIndex: 0
   setEquipmentContainersBySetters: 0
   deactivateInstantiatedObjects: 0
-  activateInstantiateObject: 0
+  activateInstantiatedObject: 0
   animatorType: 0
   animator: {fileID: 95656639932681360}
   animatorController: {fileID: 9100000, guid: 767c78a88875d8749b9859d001ddb647, type: 2}
@@ -1174,8 +1174,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assetId: 
   objectId: 0
-  connectionId: 0
-  manager: {fileID: 0}
   subscriberIds: 
 --- !u!114 &114706046604278806
 MonoBehaviour:
@@ -1347,6 +1345,18 @@ MonoBehaviour:
   canBackwardSprint: 0
   combatTextTransform: {fileID: 4739274400074772}
   opponentAimTransform: {fileID: 0}
+  onNormalDamageHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onCriticalDamageHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onBlockedDamageHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onDamageMissed:
+    m_PersistentCalls:
+      m_Calls: []
   currentHp:
     behaviour: {fileID: 0}
     elementId: 0
@@ -1362,6 +1372,15 @@ MonoBehaviour:
   characterUITransform: {fileID: 4776855341053162}
   miniMapUITransform: {fileID: 4587424033350662}
   debugFovColor: {r: 0, g: 1, b: 0, a: 0.04}
+  onDead:
+    m_PersistentCalls:
+      m_Calls: []
+  onRespawn:
+    m_PersistentCalls:
+      m_Calls: []
+  onLevelUp:
+    m_PersistentCalls:
+      m_Calls: []
   id:
     behaviour: {fileID: 0}
     elementId: 0
@@ -1641,7 +1660,8 @@ MonoBehaviour:
   sendInterval: 0.1
   mainModel: {fileID: 114668736016833334}
   fpsModelPrefab: {fileID: 0}
-  fpsModelOffsets: {x: 0, y: 0, z: 0}
+  fpsModelPositionOffsets: {x: 0, y: 0, z: 0}
+  fpsModelRotationOffsets: {x: 0, y: 0, z: 0}
   vehicleModels: []
 --- !u!114 &-8144213145109122996
 MonoBehaviour:
