@@ -4,18 +4,30 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 446bd54be72e9c14a9d92aae35e50af7, type: 3}
   m_Name: GameDatabase_RaceDemo
   m_EditorClassIdentifier: 
+  playerCharacterEntities:
+  - {fileID: 114016340212064688, guid: bd24e37ae385b3746a60a3fd8cc71164, type: 3}
+  - {fileID: 114026934616346548, guid: d5831d1299abfb445b26a45952fb8125, type: 3}
+  - {fileID: 114607038526802144, guid: b925e4829480a48488db00a45708a622, type: 3}
+  monsterCharacterEntities:
+  - {fileID: 114313543944479198, guid: c26675f5ea04ade429c509dd5998a3a3, type: 3}
+  - {fileID: 114107677553822186, guid: 2124e2e5e8dd2794ea8c8aff808d0096, type: 3}
+  - {fileID: 114355961751498552, guid: fbe9b355dd4e810409312de38efbae6e, type: 3}
+  vehicleEntities: []
   attributes:
   - {fileID: 11400000, guid: 0e223af20738b88419c22a1a0401a21b, type: 2}
   - {fileID: 11400000, guid: cf50e3647cfae0e44b683163d2171277, type: 2}
   - {fileID: 11400000, guid: c7e3824f99bb4bc43b9566210f8d02f5, type: 2}
   - {fileID: 11400000, guid: cd3d2fb4f3c67fd4dbba3bd0ccd0095e, type: 2}
+  currencies:
+  - {fileID: 11400000, guid: 02d40019f7430f0459286df57e6b450b, type: 2}
   items:
   - {fileID: 11400000, guid: 0df782e70d43dc54d8a6bc2d6a212f89, type: 2}
   - {fileID: 11400000, guid: 64774d4b5cf3f9846a2d2088fb52e44a, type: 2}
@@ -45,16 +57,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 56999d63a8734bd4f8b19e254ecfbeae, type: 2}
   - {fileID: 11400000, guid: d4a2fc417a247c74f9db5f31ab7d2b75, type: 2}
   - {fileID: 11400000, guid: fe3307ecb7dbe3142a73616746b84e59, type: 2}
-  playerCharacterEntities:
-  - {fileID: 114016340212064688, guid: bd24e37ae385b3746a60a3fd8cc71164, type: 2}
-  - {fileID: 114026934616346548, guid: d5831d1299abfb445b26a45952fb8125, type: 2}
-  - {fileID: 114607038526802144, guid: b925e4829480a48488db00a45708a622, type: 2}
-  monsterCharacterEntities:
-  - {fileID: 114313543944479198, guid: c26675f5ea04ade429c509dd5998a3a3, type: 2}
-  - {fileID: 114107677553822186, guid: 2124e2e5e8dd2794ea8c8aff808d0096, type: 2}
-  - {fileID: 114355961751498552, guid: fbe9b355dd4e810409312de38efbae6e, type: 2}
-  vehicleEntities: []
   mapInfos:
   - {fileID: 11400000, guid: de8b0e4099f8d444692e88f92309e90d, type: 2}
   - {fileID: 11400000, guid: fbe2a93dfafee544cbeaf175d3491e33, type: 2}
+  quests: []
   factions: []
