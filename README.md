@@ -1,5 +1,9 @@
 # UnityMultiplayerARPG_CharacterRace
 
+**Race System will be included in the Core project from version 1.61b, so this won't be necessary in the case you want your game to have race selection anymore.**
+
+* * *
+
 Try the demo in `/Scenes`
 
 ![Preview](ScreenShots/preview.gif)
